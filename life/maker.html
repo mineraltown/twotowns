@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>加工机</title>
+<link rel="stylesheet" type="text/css" href="../twotown.css">
+</head>
+<body>
+<h3><ruby>加工机<rt>メーカー</rt></ruby></h3>
+可以同时加工12种物品，每种物品最多加工20个
+<br>加工机通过牧场的扩建获得
+<br>
+<br>【蓝铃村】
+<br>放牧地扩建1次 → 宠物游乐园 → 加工小屋(发酵・毛线加工机) → 饮料加工机
+<br>
+<br>【此花村】
+<br>田地扩建3次 → 水田＆水車小屋(种子・粉末加工机) → 酱菜加工机
+<br><br>
+<table cellspacing="0" border="1" cellpadding="5" rules="all">
+<tr>
+    <th>加工品名</th>
+    <th>材料</th>
+    <th>加工時間</th>
+</tr>
+<h3><ruby>发酵加工机<rt>発酵メーカー</rt></ruby></h3>
+<tr>
+    <td><div><ruby>奶酪<rt>チーズ</rt></ruby></div></td>
+    <td><div><ruby>牛奶<rt>ミルク</rt></ruby></div></td>
+    <td>1.5h</td>
+</tr>
+<tr>
+    <td><div><ruby>上等奶酪<rt>上チーズ</rt></ruby></div></td>
+    <td><div><ruby>泽西牛奶<rt>ジャージーミルク</rt></ruby></div></td>
+    <td>2.0h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>极品奶酪<rt>極チーズ</rt></ruby></div></td>
+    <td><div><ruby>奇迹牛奶<rt>ミラクルミルク</rt></ruby></div></td>
+    <td>2.5h</td>
+</tr>
+<tr>
+    <td><div><ruby>香草奶酪<rt>ハーブチーズ</rt></ruby></div></td>
+    <td><div><ruby>牛奶＋甘菊<rt>ミルク＋カモミール</rt></ruby></div></td>
+    <td>2.0h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>上等香草奶酪<rt>上ハーブチーズ</rt></ruby></div></td>
+    <td><div><ruby>泽西牛奶＋甘菊<rt>ジャージーミルク＋カモミール</rt></ruby></div></td>
+    <td>2.5h</td>
+</tr>
+<tr>
+    <td><div><ruby>极品香草奶酪<rt>極ハーブチーズ</rt></ruby></div></td>
+    <td><div><ruby>奇迹牛奶＋甘菊<rt>ミラクルミルク＋カモミール</rt></ruby></div></td>
+    <td>3.0h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>酸奶<rt>ヨーグルト</rt></ruby></div></td>
+    <td><div><ruby>牛奶＋薄荷<rt>ミルク＋ミント</rt></ruby></div></td>
+    <td>6.0h</td>
+</tr>
+<tr>
+    <td><div><ruby>上等酸奶<rt>上ヨーグルト</rt></ruby></div></td>
+    <td><div><ruby>泽西牛奶＋薄荷<rt>ジャージーミルク＋ミント</rt></ruby></div></td>
+    <td>9.0h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>极品酸奶<rt>極ヨーグルト</rt></ruby></div></td>
+    <td><div><ruby>奇迹牛奶＋薄荷<rt>ミラクルミルク＋ミント</rt></ruby></div></td>
+    <td>12h</td>
+</tr>
+<tr>
+    <td><div><ruby>水果酸奶<rt>果実ヨーグルト</rt></ruby></div></td>
+    <td><div><ruby>牛奶＋薄荷＋香蕉＋蜜桃<rt>ミルク＋ミント＋バナナ＋もも</rt></ruby></div></td>
+    <td>7.5h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>上等水果酸奶<rt>上果実ヨーグルト</rt></ruby></div></td>
+    <td><div><ruby>泽西牛奶＋薄荷＋橘子＋苹果＋葡萄<rt>ジャージーミルク＋ミント＋みかん＋りんご＋ぶどう</rt></ruby></div></td>
+    <td>10.5h</td>
+</tr>
+<tr>
+    <td><div><ruby>极品水果酸奶<rt>極果実ヨーグルト</rt></ruby></div></td>
+    <td><div><ruby>奇迹牛奶＋薄荷＋葡萄＋蜜桃＋樱桃<rt>ミラクルミルク＋ミント＋ぶどう＋もも＋さくらんぼ</rt></ruby></div></td>
+    <td>13.5h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>黄油<rt>バター</rt></ruby></div></td>
+    <td><div><ruby>牛奶＋油<rt>ミルク＋油</rt></ruby></div></td>
+    <td>1.0h</td>
+</tr>
+<tr>
+    <td><div><ruby>上等黄油<rt>上バター</rt></ruby></div></td>
+    <td><div><ruby>泽西牛奶＋油<rt>ジャージーミルク＋油</rt></ruby></div></td>
+    <td>2.5h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>极品黄油<rt>極バター</rt></ruby></div></td>
+    <td><div><ruby>奇迹牛奶＋油<rt>ミラクルミルク＋油</rt></ruby></div></td>
+    <td>4.0h</td>
+</tr>
+<tr>
+    <td><div><ruby>香草黄油<rt>ハーブバター</rt></ruby></div></td>
+    <td><div><ruby>牛奶＋甘菊＋油<rt>ミルク＋カモミール＋油</rt></ruby></div></td>
+    <td>2.0h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>上等香草黄油<rt>上ハーブバター</rt></ruby></div></td>
+    <td><div><ruby>泽西牛奶＋甘菊＋油<rt>ジャージーミルク＋カモミール＋油</rt></ruby></div></td>
+    <td>3.5h</td>
+</tr>
+<tr>
+    <td><div><ruby>极品香草黄油<rt>極ハーブバター</rt></ruby></div></td>
+    <td><div><ruby>奇迹牛奶＋甘菊＋油<rt>ミラクルミルク＋カモミール＋油</rt></ruby></div></td>
+    <td>5.0h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>蛋黄酱<rt>マヨネーズ</rt></ruby></div></td>
+    <td><div><ruby>鸡蛋＋油<rt>卵＋油</rt></ruby></div></td>
+    <td>0.5h</td>
+</tr>
+<tr>
+    <td><div><ruby>上等蛋黄酱<rt>上マヨネーズ</rt></ruby></div></td>
+    <td><div><ruby>黑鸡蛋＋油<rt>黒い卵＋油</rt></ruby></div></td>
+    <td>1.0h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>极品蛋黄酱<rt>極マヨネーズ</rt></ruby></div></td>
+    <td><div><ruby>金鸡蛋＋油<rt>金の卵＋油</rt></ruby></div></td>
+    <td>1.5h</td>
+</tr>
+<tr>
+    <td><div><ruby>香草蛋黄酱<rt>ハーブマヨネーズ</rt></ruby></div></td>
+    <td><div><ruby>鸡蛋＋甘菊＋油<rt>卵＋カモミール＋油</rt></ruby></div></td>
+    <td>45m</td>
+</tr>
+
+<tr>
+    <td><div><ruby>上等香草蛋黄酱<rt>上ハーブマヨネーズ</rt></ruby></div></td>
+    <td><div><ruby>黑鸡蛋＋甘菊＋油<rt>黒い卵＋カモミール＋油</rt></ruby></div></td>
+    <td>1h15m</td>
+</tr>
+<tr>
+    <td><div><ruby>极品香草蛋黄酱<rt>極ハーブマヨネーズ</rt></ruby></div></td>
+    <td><div><ruby>金鸡蛋＋甘菊＋油<rt>金の卵＋カモミール＋油</rt></ruby></div></td>
+    <td>1h45m</td>
+</tr>
+
+<tr>
+    <td><div><ruby>罐装巧克力<rt>チョコレートパック</rt></ruby></div></td>
+    <td><div><ruby>可可豆<rt>カカオ</rt></ruby></div></td>
+    <td>2h15m</td>
+</tr>
+<tr>
+    <td><div><ruby>味噌<rt>みそ</rt></ruby></div></td>
+    <td><div><ruby>大豆＋米饭<rt>大豆＋ご飯</rt></ruby></div></td>
+    <td>60h</td>
+</tr>
+<tr>
+    <td><div><ruby>纳豆<rt>納豆</rt></ruby></div></td>
+    <td><div><ruby>大豆＋稻穗<rt>大豆＋いなほ</rt></ruby></div></td>
+    <td>2h15m</td>
+</tr>
+</table>
+<h3><ruby>毛线加工机<rt>毛糸メーカー</rt></ruby></h3>
+<table cellspacing="0" border="1" cellpadding="5" rules="all">
+<tr>
+    <th>加工品名</th>
+    <th>材料</th>
+    <th>加工時間</th>
+</tr>
+
+<tr>
+    <td><div><ruby>毛线球<rt>毛糸玉</rt></ruby></div></td>
+    <td><div><ruby>羊毛<rt>羊毛</rt></ruby></div></td>
+    <td>11.5h</td>
+</tr>
+<tr>
+    <td><div><ruby>萨福克毛线球<rt>サフォーク毛糸玉</rt></ruby></div></td>
+    <td><div><ruby>好羊毛<rt>いい羊毛</rt></ruby></div></td>
+    <td>12.5h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>极品毛线球<rt>極毛糸玉</rt></ruby></div></td>
+    <td><div><ruby>软羊毛<rt>ふわわ羊毛</rt></ruby></div></td>
+    <td>15h</td>
+</tr>
+<tr>
+    <td><div><ruby>白色羊驼毛线球<rt>白アルパカ毛糸玉</rt></ruby></div></td>
+    <td><div><ruby>白色羊驼毛<rt>白いアルパカの毛</rt></ruby></div></td>
+    <td>15h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>茶色羊驼毛线球<rt>茶アルパカ毛糸玉</rt></ruby></div></td>
+    <td><div><ruby>茶色羊驼毛<rt>茶色いアルパカの毛</rt></ruby></div></td>
+    <td>22.5h</td>
+</tr>
+</table>
+<h3><ruby>饮料加工机<rt>ドリンクメーカー</rt></ruby></h3>
+<table cellspacing="0" border="1" cellpadding="5" rules="all">
+<tr>
+    <th>加工品名</th>
+    <th>材料</th>
+    <th>加工時間</th>
+</tr>
+
+<tr>
+    <td><div><ruby>葡萄酒<rt>ワイン</rt></ruby></div></td>
+    <td><div><ruby>葡萄<rt>ぶどう</rt></ruby></div></td>
+    <td>24h</td>
+</tr>
+<tr>
+    <td><div><ruby>玉米酒<rt>チチャ</rt></ruby></div></td>
+    <td><div><ruby>玉米＋酸奶<rt>とうもろこし＋ヨーグルト</rt></ruby></div></td>
+    <td>24h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>蜂蜜酒<rt>ハチミツ酒</rt></ruby></div></td>
+    <td><div><ruby>蜂蜜＋葡萄酒<rt>ハチミツ＋ワイン</rt></ruby></div></td>
+    <td>24h</td>
+</tr>
+<tr>
+    <td><div><ruby>栗子酒<rt>くり酒</rt></ruby></div></td>
+    <td><div><ruby>栗子＋葡萄酒<rt>くり＋ワイン</rt></ruby></div></td>
+    <td>24h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>梅子酒<rt>うめ酒</rt></ruby></div></td>
+    <td><div><ruby>梅子＋葡萄酒<rt>うめ＋ワイン</rt></ruby></div></td>
+    <td>24h</td>
+</tr>
+<tr>
+    <td><div><ruby>杏仁酒<rt>あんず酒</rt></ruby></div></td>
+    <td><div><ruby>杏＋葡萄酒<rt>あんず＋ワイン</rt></ruby></div></td>
+    <td>24h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>果酒<rt>果実酒</rt></ruby></div></td>
+    <td><div><ruby>葡萄酒＋苹果＋蜜桃<rt>ワイン＋りんご＋もも</rt></ruby></div></td>
+    <td>24h</td>
+</tr>
+<tr>
+    <td><div><ruby>玫瑰葡萄酒<rt>ローズワイン</rt></ruby></div></td>
+    <td><div><ruby>葡萄酒＋粉红玫瑰＋红玫瑰＋白玫瑰＋蓝玫瑰<rt>ワイン＋ピンクローズ＋レッドローズ＋ホワイトローズ＋ブルーローズ</rt></ruby></div></td>
+    <td>36h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>春风葡萄酒<rt>春風のワイン</rt></ruby></div></td>
+    <td><div><ruby>葡萄酒＋草莓<rt>ワイン＋いちご</rt></ruby></div></td>
+    <td>24h</td>
+</tr>
+<tr>
+    <td><div><ruby>夏风葡萄酒<rt>夏風のワイン</rt></ruby></div></td>
+    <td><div><ruby>葡萄酒＋番茄<rt>ワイン＋トマト</rt></ruby></div></td>
+    <td>24h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>秋风葡萄酒<rt>秋風のワイン</rt></ruby></div></td>
+    <td><div><ruby>葡萄酒＋苹果<rt>ワイン＋りんご</rt></ruby></div></td>
+    <td>24h</td>
+</tr>
+<tr>
+    <td><div><ruby>四季葡萄酒<rt>四季のワイン</rt></ruby></div></td>
+    <td><div><ruby>葡萄酒＋春风葡萄酒＋夏风葡萄酒＋秋风葡萄酒<rt>ワイン＋春風のワイン＋夏風のワイン＋秋風のワイン</rt></ruby></div></td>
+    <td>72h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>啤酒<rt>ビール</rt></ruby></div></td>
+    <td><div><ruby>小麦＋大豆<rt>小麦＋大豆</rt></ruby></div></td>
+    <td>24h</td>
+</tr>
+<tr>
+    <td><div><ruby>绿茶罐<rt>緑茶缶</rt></ruby></div></td>
+    <td><div><ruby>春茶叶<rt>春茶葉</rt></ruby></div></td>
+    <td>2.5h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>抹茶罐<rt>まっ茶缶</rt></ruby></div></td>
+    <td><div><ruby>绿茶罐<rt>緑茶缶</rt></ruby></div></td>
+    <td>2.5h</td>
+</tr>
+<tr>
+    <td><div><ruby>煎茶罐<rt>せん茶缶</rt></ruby></div></td>
+    <td><div><ruby>春茶叶＋夏茶叶<rt>春茶葉＋夏茶葉</rt></ruby></div></td>
+    <td>2.5h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>普洱茶罐<rt>プーアル茶缶</rt></ruby></div></td>
+    <td><div><ruby>夏茶叶<rt>夏茶葉</rt></ruby></div></td>
+    <td>2.5h</td>
+</tr>
+<tr>
+    <td><div><ruby>乌龙茶罐<rt>ウーロン茶缶</rt></ruby></div></td>
+    <td><div><ruby>夏茶叶＋秋茶叶<rt>夏茶葉＋秋茶葉</rt></ruby></div></td>
+    <td>2.5h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>荞麦茶罐<rt>そば茶缶</rt></ruby></div></td>
+    <td><div><ruby>夏茶叶＋荞麦<rt>夏茶葉＋そば</rt></ruby></div></td>
+    <td>2.5h</td>
+</tr>
+<tr>
+    <td><div><ruby>人参茶罐<rt>人参茶缶</rt></ruby></div></td>
+    <td><div><ruby>夏茶叶＋秋茶叶＋胡萝卜<rt>夏茶葉＋秋茶葉＋にんじん</rt></ruby></div></td>
+    <td>5h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>红茶罐<rt>紅茶缶</rt></ruby></div></td>
+    <td><div><ruby>秋茶叶<rt>秋茶葉</rt></ruby></div></td>
+    <td>2.5h</td>
+</tr>
+<tr>
+    <td><div><ruby>香草茶罐<rt>ハーブティー缶</rt></ruby></div></td>
+    <td><div><ruby>薄荷＋甘菊＋薰衣草<rt>ミント＋カモミール＋ラベンダー</rt></ruby></div></td>
+    <td>7.5h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>玫瑰茶罐<rt>ローズティー缶</rt></ruby></div></td>
+    <td><div><ruby>秋茶叶＋粉红玫瑰<rt>秋茶葉＋ピンクローズ</rt></ruby></div></td>
+    <td>60.5h</td>
+</tr>
+<tr>
+    <td><div><ruby>春色罐装红茶<rt>春色ブレンド紅茶缶</rt></ruby></div></td>
+    <td><div><ruby>红茶罐＋草莓<rt>紅茶缶＋いちご</rt></ruby></div></td>
+    <td>30h</td>
+</tr>
+ 
+<tr>
+    <td><div><ruby>夏色罐装红茶<rt>夏色ブレンド紅茶缶</rt></ruby></div></td>
+    <td><div><ruby>红茶罐＋西瓜<rt>紅茶缶＋すいか</rt></ruby></div></td>
+    <td>30h</td>
+</tr>
+<tr>
+    <td><div><ruby>秋色罐装红茶<rt>秋色ブレンド紅茶缶</rt></ruby></div></td>
+    <td><div><ruby>红茶罐＋苹果<rt>紅茶缶＋りんご</rt></ruby></div></td>
+    <td>30h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>黄金罐装红茶<rt>黄金ブレンド紅茶缶</rt></ruby></div></td>
+    <td><div><ruby>红茶罐＋橘子＋香蕉＋樱桃<rt>紅茶缶＋みかん＋バナナ＋さくらんぼ</rt></ruby></div></td>
+    <td>84h</td>
+</tr>
+<tr>
+    <td><div><ruby>咖啡粉<rt>コーヒーパック</rt></ruby></div></td>
+    <td><div><ruby>咖啡豆<rt>コーヒー豆</rt></ruby></div></td>
+    <td>6h15m</td>
+</tr>
+
+<tr>
+    <td><div><ruby>罐装可可茶<rt>ココアパック</rt></ruby></div></td>
+    <td><div><ruby>罐装巧克力<rt>チョコレートパック</rt></ruby></div></td>
+    <td>6.5h</td>
+</tr>
+</table>
+<h3><ruby>种子加工机<rt>種メーカー</rt></ruby></h3>
+<table cellspacing="0" border="1" cellpadding="5" rules="all">
+<tr>
+    <th>加工品名</th>
+    <th>材料</th>
+    <th>加工時間</th>
+</tr>
+
+<tr>
+    <td><div><ruby>芜菁种子<rt>かぶの種</rt></ruby></div></td>
+    <td><div><ruby>芜菁<rt>かぶ</rt></ruby></div></td>
+    <td>2h</td>
+</tr>
+<tr>
+    <td><div><ruby>土豆种子<rt>じゃがいもの種</rt></ruby></div></td>
+    <td><div><ruby>土豆<rt>じゃがいも</rt></ruby></div></td>
+    <td>2h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>卷心菜种子<rt>きゃべつの種</rt></ruby></div></td>
+    <td><div><ruby>卷心菜<rt>きゃべつ</rt></ruby></div></td>
+    <td>2h</td>
+</tr>
+<tr>
+    <td><div><ruby>黄瓜种子<rt>きゅうりの種</rt></ruby></div></td>
+    <td><div><ruby>黄瓜<rt>きゅうり</rt></ruby></div></td>
+    <td>2h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>芦笋种子<rt>アスパラの種</rt></ruby></div></td>
+    <td><div><ruby>芦笋<rt>アスパラ</rt></ruby></div></td>
+    <td>2h</td>
+</tr>
+<tr>
+    <td><div><ruby>草莓种子<rt>いちごの種</rt></ruby></div></td>
+    <td><div><ruby>草莓<rt>いちご</rt></ruby></div></td>
+    <td>2h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>番茄种子<rt>トマトの種</rt></ruby></div></td>
+    <td><div><ruby>番茄<rt>トマト</rt></ruby></div></td>
+    <td>3h</td>
+</tr>
+<tr>
+    <td><div><ruby>玉米种子<rt>とうもろこしの種</rt></ruby></div></td>
+    <td><div><ruby>玉米<rt>とうもろこし</rt></ruby></div></td>
+    <td>3h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>洋葱种子<rt>たまねぎの種</rt></ruby></div></td>
+    <td><div><ruby>洋葱<rt>たまねぎ</rt></ruby></div></td>
+    <td>3h</td>
+</tr>
+<tr>
+    <td><div><ruby>西瓜种子<rt>すいかの種</rt></ruby></div></td>
+    <td><div><ruby>西瓜<rt>すいか</rt></ruby></div></td>
+    <td>3h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>菠萝种子<rt>パイナップルの種</rt></ruby></div></td>
+    <td><div><ruby>菠萝<rt>パイナップル</rt></ruby></div></td>
+    <td>3h</td>
+</tr>
+<tr>
+    <td><div><ruby>南瓜种子<rt>かぼちゃの種</rt></ruby></div></td>
+    <td><div><ruby>南瓜<rt>かぼちゃ</rt></ruby></div></td>
+    <td>3h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>水萝卜种子<rt>ラディッシュの種</rt></ruby></div></td>
+    <td><div><ruby>水萝卜<rt>ラディッシュ</rt></ruby></div></td>
+    <td>2h</td>
+</tr>
+<tr>
+    <td><div><ruby>茄子种子<rt>なすの種</rt></ruby></div></td>
+    <td><div><ruby>茄子<rt>なす</rt></ruby></div></td>
+    <td>2h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>胡萝卜种子<rt>にんじんの種</rt></ruby></div></td>
+    <td><div><ruby>胡萝卜<rt>にんじん</rt></ruby></div></td>
+    <td>2h</td>
+</tr>
+<tr>
+    <td><div><ruby>地瓜种子<rt>さつまいもの種</rt></ruby></div></td>
+    <td><div><ruby>地瓜<rt>さつまいも</rt></ruby></div></td>
+    <td>2h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>青椒种子<rt>ピーマンの種</rt></ruby></div></td>
+    <td><div><ruby>青椒<rt>ピーマン</rt></ruby></div></td>
+    <td>2h</td>
+</tr>
+<tr>
+    <td><div><ruby>菠菜种子<rt>ほうれん草の種</rt></ruby></div></td>
+    <td><div><ruby>菠菜<rt>ほうれん草</rt></ruby></div></td>
+    <td>2h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>萝卜种子<rt>大根の種</rt></ruby></div></td>
+    <td><div><ruby>萝卜<rt>大根</rt></ruby></div></td>
+    <td>2h</td>
+</tr>
+<tr>
+    <td><div><ruby>白菜种子<rt>白菜の種</rt></ruby></div></td>
+    <td><div><ruby>白菜<rt>白菜</rt></ruby></div></td>
+    <td>2h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>粉红玫瑰种子<rt>ピンクローズの種</rt></ruby></div></td>
+    <td><div><ruby>粉红玫瑰<rt>ピンクローズ</rt></ruby></div></td>
+    <td>2h</td>
+</tr>
+<tr>
+    <td><div><ruby>木春菊种子<rt>マーガレットの種</rt></ruby></div></td>
+    <td><div><ruby>木春菊<rt>マーガレット</rt></ruby></div></td>
+    <td>2h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>康乃馨种子<rt>カーネーションの種</rt></ruby></div></td>
+    <td><div><ruby>康乃馨<rt>カーネーション</rt></ruby></div></td>
+    <td>2h</td>
+</tr>
+<tr>
+    <td><div><ruby>卡萨布兰卡种子<rt>カサブランカの種</rt></ruby></div></td>
+    <td><div><ruby>卡萨布兰卡<rt>カサブランカ</rt></ruby></div></td>
+    <td>2h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>红玫瑰种子<rt>レッドローズの種</rt></ruby></div></td>
+    <td><div><ruby>红玫瑰<rt>レッドローズ</rt></ruby></div></td>
+    <td>2h</td>
+</tr>
+<tr>
+    <td><div><ruby>向日葵种子<rt>ひまわりの種</rt></ruby></div></td>
+    <td><div><ruby>向日葵<rt>ひまわり</rt></ruby></div></td>
+    <td>2h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>瞿麦种子<rt>なでしこの種</rt></ruby></div></td>
+    <td><div><ruby>瞿麦<rt>なでしこ</rt></ruby></div></td>
+    <td>2h</td>
+</tr>
+<tr>
+    <td><div><ruby>非洲菊种子<rt>ガーベラの種</rt></ruby></div></td>
+    <td><div><ruby>非洲菊<rt>ガーベラ</rt></ruby></div></td>
+    <td>2h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>白玫瑰种子<rt>ホワイトローズの種</rt></ruby></div></td>
+    <td><div><ruby>白玫瑰<rt>ホワイトローズ</rt></ruby></div></td>
+    <td>2h</td>
+</tr>
+<tr>
+    <td><div><ruby>雪莲种子<rt>スノードロップの種</rt></ruby></div></td>
+    <td><div><ruby>雪莲<rt>スノードロップ</rt></ruby></div></td>
+    <td>2h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>龙胆种子<rt>りんどうの種</rt></ruby></div></td>
+    <td><div><ruby>龙胆<rt>りんどう</rt></ruby></div></td>
+    <td>2h</td>
+</tr>
+<tr>
+    <td><div><ruby>蓝色妖姬种子<rt>ブルーローズの種</rt></ruby></div></td>
+    <td><div><ruby>蓝色妖姬<rt>ブルーローズ</rt></ruby></div></td>
+    <td>2h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>小麦种子<rt>小麦の種</rt></ruby></div></td>
+    <td><div><ruby>小麦＋肥料<rt>小麦＋ひりょう</rt></ruby></div></td>
+    <td>3h</td>
+</tr>
+<tr>
+    <td><div><ruby>稻穗种子<rt>お米の苗</rt></ruby></div></td>
+    <td><div><ruby>稻穗＋肥料<rt>お米＋ひりょう</rt></ruby></div></td>
+    <td>3h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>荞麦种子<rt>そばの種</rt></ruby></div></td>
+    <td><div><ruby>荞麦＋肥料<rt>そば＋ひりょう</rt></ruby></div></td>
+    <td>3h</td>
+</tr>
+<tr>
+    <td><div><ruby>大豆种子<rt>大豆</rt></ruby></div></td>
+    <td><div><ruby>大豆＋肥料<rt>大豆＋ひりょう</rt></ruby></div></td>
+    <td>3h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>咖啡豆种子<rt>コーヒーの種</rt></ruby></div></td>
+    <td><div><ruby>咖啡豆＋肥料<rt>コーヒー＋ひりょう</rt></ruby></div></td>
+    <td>144h</td>
+</tr>
+<tr>
+    <td><div><ruby>樱桃种子<rt>さくらんぼの種</rt></ruby></div></td>
+    <td><div><ruby>樱桃＋肥料<rt>さくらんぼ＋ひりょう</rt></ruby></div></td>
+    <td>144h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>桃子种子<rt>ももの種</rt></ruby></div></td>
+    <td><div><ruby>桃子＋肥料<rt>もも＋ひりょう</rt></ruby></div></td>
+    <td>144h</td>
+</tr>
+<tr>
+    <td><div><ruby>香蕉种子<rt>バナナの種</rt></ruby></div></td>
+    <td><div><ruby>香蕉＋肥料<rt>バナナ＋ひりょう</rt></ruby></div></td>
+    <td>144h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>葡萄种子<rt>ぶどうの種</rt></ruby></div></td>
+    <td><div><ruby>葡萄＋肥料<rt>ぶどう＋ひりょう</rt></ruby></div></td>
+    <td>144h</td>
+</tr>
+<tr>
+    <td><div><ruby>苹果种子<rt>りんごの種</rt></ruby></div></td>
+    <td><div><ruby>苹果＋肥料<rt>りんご＋ひりょう</rt></ruby></div></td>
+    <td>144h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>橘子种子<rt>みかんの種</rt></ruby></div></td>
+    <td><div><ruby>橘子＋肥料<rt>みかん＋ひりょう</rt></ruby></div></td>
+    <td>144h</td>
+</tr>
+<tr>
+    <td><div><ruby>可可豆种子<rt>カカオの種</rt></ruby></div></td>
+    <td><div><ruby>可可豆＋肥料<rt>カカオ＋ひりょう</rt></ruby></div></td>
+    <td>144h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>茶叶种子<rt>お茶の種</rt></ruby></div></td>
+    <td><div><ruby>春茶叶＋夏茶叶＋秋茶叶<rt>春茶葉＋夏茶葉＋秋茶葉</rt></ruby></div></td>
+    <td>192h</td>
+</tr>
+</table>
+<h3><ruby>粉末加工机<rt>粉メーカー</rt></ruby></h3>
+<table cellspacing="0" border="1" cellpadding="5" rules="all">
+<tr>
+    <th>加工品名</th>
+    <th>材料</th>
+    <th>加工時間</th>
+</tr>
+
+<tr>
+    <td><div><ruby>米<rt>お米</rt></ruby></div></td>
+    <td><div><ruby>稻穗<rt>いなほ</rt></ruby></div></td>
+    <td>0.5h</td>
+</tr>
+<tr>
+    <td><div><ruby>小麦粉<rt>小麦粉</rt></ruby></div></td>
+    <td><div><ruby>小麦<rt>小麦</rt></ruby></div></td>
+    <td>0.5h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>面包粉<rt>パン粉</rt></ruby></div></td>
+    <td><div><ruby>面包<rt>パン</rt></ruby></div></td>
+    <td>0.5h</td>
+</tr>
+<tr>
+    <td><div><ruby>米粉<rt>米粉</rt></ruby></div></td>
+    <td><div><ruby>米<rt>お米</rt></ruby></div></td>
+    <td>0.5h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>大豆粉<rt>きな粉</rt></ruby></div></td>
+    <td><div><ruby>大豆<rt>大豆</rt></ruby></div></td>
+    <td>0.5h</td>
+</tr>
+<tr>
+    <td><div><ruby>荞麦粉<rt>そば粉</rt></ruby></div></td>
+    <td><div><ruby>荞麦<rt>そば</rt></ruby></div></td>
+    <td>0.5h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>糯米粉<rt>白玉粉</rt></ruby></div></td>
+    <td><div><ruby>年糕<rt>おもち</rt></ruby></div></td>
+    <td>0.5h</td>
+</tr>
+</table>
+<h3><ruby>酱菜加工机<rt>つけものメーカー</rt></ruby></h3>
+<table cellspacing="0" border="1" cellpadding="5" rules="all">
+<tr>
+    <th>加工品名</th>
+    <th>材料</th>
+    <th>加工時間</th>
+</tr>
+
+<tr>
+    <td><div><ruby>腌黄瓜<rt>きゅうりピクルス</rt></ruby></div></td>
+    <td><div><ruby>黄瓜＋油<rt>きゅうり＋油</rt></ruby></div></td>
+    <td>5.0h</td>
+</tr>
+<tr>
+    <td><div><ruby>腌洋葱<rt>たまねぎピクルス</rt></ruby></div></td>
+    <td><div><ruby>洋葱＋油<rt>たまねぎ＋油</rt></ruby></div></td>
+    <td>3.0h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>腌胡萝卜<rt>にんじんピクルス</rt></ruby></div></td>
+    <td><div><ruby>胡萝卜＋油<rt>にんじん＋油</rt></ruby></div></td>
+    <td>5.0h</td>
+</tr>
+<tr>
+    <td><div><ruby>腌水萝卜<rt>ラディッシュピクルス</rt></ruby></div></td>
+    <td><div><ruby>水萝卜＋油<rt>ラディッシュ＋油</rt></ruby></div></td>
+    <td>5.0h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>混合腌菜<rt>ピクルスつめ合わせ</rt></ruby></div></td>
+    <td><div><ruby>腌黄瓜＋腌洋葱＋腌胡萝卜＋腌水萝卜<rt>きゅうりピクルス＋たまねぎピクルス＋にんじんピクルス＋ラディッシュピクルス</rt></ruby></div></td>
+    <td>94h</td>
+</tr>
+<tr>
+    <td><div><ruby>芜菁泡菜<rt>かぶのつけもの</rt></ruby></div></td>
+    <td><div><ruby>芜菁＋梅子<rt>かぶ＋うめ</rt></ruby></div></td>
+    <td>12h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>黄瓜泡菜<rt>きゅうりのつけもの</rt></ruby></div></td>
+    <td><div><ruby>黄瓜＋梅子<rt>きゅうり＋うめ</rt></ruby></div></td>
+    <td>12h</td>
+</tr>
+<tr>
+    <td><div><ruby>西瓜泡菜<rt>すいかのつけもの</rt></ruby></div></td>
+    <td><div><ruby>西瓜＋梅子<rt>すいか＋うめ</rt></ruby></div></td>
+    <td>12h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>茄子泡菜<rt>なすのつけもの</rt></ruby></div></td>
+    <td><div><ruby>茄子＋梅子<rt>なす＋うめ</rt></ruby></div></td>
+    <td>12h</td>
+</tr>
+<tr>
+    <td><div><ruby>萝卜泡菜<rt>だいこんのつけもの</rt></ruby></div></td>
+    <td><div><ruby>萝卜＋梅子<rt>大根＋うめ</rt></ruby></div></td>
+    <td>12h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>白菜泡菜<rt>はくさいのつけもの</rt></ruby></div></td>
+    <td><div><ruby>白菜＋梅子<rt>白菜＋うめ</rt></ruby></div></td>
+    <td>12h</td>
+</tr>
+<tr>
+    <td><div><ruby>混合泡菜<rt>つけものつめ合わせ</rt></ruby></div></td>
+    <td><div><ruby>白菜泡菜＋黄瓜泡菜＋西瓜泡菜＋茄子泡菜＋萝卜泡菜<rt>はくさいのつけもの＋きゅうりのつけもの＋すいかのつけもの＋なすのつけもの＋だいこんのつけもの</rt></ruby></div></td>
+    <td>94h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>白泡菜<rt>白キムチ</rt></ruby></div></td>
+    <td><div><ruby>白菜＋萝卜＋黄瓜<rt>白菜＋大根＋きゅうり</rt></ruby></div></td>
+    <td>5h</td>
+</tr>
+<tr>
+    <td><div><ruby>朝鲜黄瓜泡菜<rt>きゅうりのキムチ</rt></ruby></div></td>
+    <td><div><ruby>黄瓜＋香料<rt>きゅうり＋スパイス</rt></ruby></div></td>
+    <td>3h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>朝鲜萝卜泡菜<rt>だいこんのキムチ</rt></ruby></div></td>
+    <td><div><ruby>萝卜＋香料<rt>大根＋スパイス</rt></ruby></div></td>
+    <td>5h</td>
+</tr>
+<tr>
+    <td><div><ruby>朝鲜白菜泡菜<rt>はくさいのキムチ</rt></ruby></div></td>
+    <td><div><ruby>白菜＋香料<rt>白菜＋スパイス</rt></ruby></div></td>
+    <td>5h</td>
+</tr>
+
+<tr>
+    <td><div><ruby>混合朝鲜泡菜<rt>キムチつめ合わせ</rt></ruby></div></td>
+    <td><div><ruby>朝鲜黄瓜泡菜＋朝鲜萝卜泡菜＋朝鲜白菜泡菜<rt>きゅうりのキムチ＋だいこんのキムチ＋はくさいのキムチ</rt></ruby></div></td>
+    <td>94h</td>
+</tr>
+<tr>
+    <td><div><ruby>梅干<rt>うめぼし</rt></ruby></div></td>
+    <td><div><ruby>梅子<rt>うめ</rt></ruby></div></td>
+    <td>5h</td>
+</tr>
+</table>
+</body>
+</html>
