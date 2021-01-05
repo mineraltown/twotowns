@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+
+.resident {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cm {
+    margin: 10px 5px 0 5px;
+    width: 170px;
+    height: 280px;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.girl {
+    width: 170px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #af0000;
+    background-color: #fabdbd;
+}
+
+.boy {
+    width: 170px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #c1e4ff;
+    color: #00508d;
+}
+
+.normal {
+    width: 170px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #eeeeee;
+    color: #333333;
+}
+
+.cm:hover {
+    background-color: #dddddd;
+    transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+}
+
+.cm:hover .girl{
+    color: #ffffff;
+    background-color: #f04e4d;
+    transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+}
+
+.cm:hover .boy{
+    color: #ffffff;
+    background-color: #1b75bc;
+    transition: background-color 0.5s, color 0.5s;
+    -moz-transition: background-color 0.5s, color 0.5s;
+    -webkit-transition: background-color 0.5s, color 0.5s;
+    -o-transition: background-color 0.5s, color 0.5s;
+}
+
+.cm:hover .normal {
+    color: #ffffff;
+    background-color: #999999;
+    transition: background-color 0.5s, color 0.5s;
+    -moz-transition: background-color 0.5s, color 0.5s;
+    -webkit-transition: background-color 0.5s, color 0.5s;
+    -o-transition: background-color 0.5s, color 0.5s;
+}
+
+.llc { border-left: solid 3px #1b75bc; }
+.chc { border-left: solid 3px #f04e4d; }
+.shan  { border-left: solid 3px #333333; }

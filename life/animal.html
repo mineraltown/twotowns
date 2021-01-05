@@ -1,244 +1,263 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-cmn-Hans">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>动物</title>
-<link rel="stylesheet" type="text/css" href="../twotown.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+    <title>动物</title>
+    <link rel="stylesheet" media="screen and (max-width:800px)" type="text/css" href="../css/szc_mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width:801px)" type="text/css" href="../css/szc.css" />
 </head>
+
 <body>
-<h3>动物</h3>
-<b>➤ 关于动物</b>
-<br>在蓝铃村的「ジェシュ･アニマルリー」购买动物
-<br>购买幼年的动物后，第二天之后会出售成年的
-<br>每天会销售的动物是随机的
-<br>可以在「ジェシュ･アニマルリー」出售动物
-<br>成年和幼年的动物都可以出售，但是不能出售怀孕和生病的动物
-<br>出售的价格会根据好感变动
-<br>
-<br><b>➤ 可以饲养的数量</b>
-<br>
-<br>【蓝铃村】
-<br><b>初期：</b>10只鸡+6只牛、羊、羊驼
-<br><b>扩建1次：</b>10只鸡+11只牛、羊、羊驼
-<br><b>扩建2次：</b>10只鸡+6只牛、羊、羊驼
-<br>
-<br>【此花村】
-<br><b>全期：</b>2只鸡+4只牛、羊、羊驼
-<br><br>
-<table cellspacing="0" border="1" cellpadding="5" rules="all">
-<tr>
-    <th>名称</th>
-    <th>幼年</th>
-    <th>成年</th>
-    <th>收获周期</th>
-    <th>成长时间</th>
-    <th>出售条件</th>
-    <th>寿命</th>
-</tr>
-<tr>
-    <td><div><ruby>鸡<rt>ニワトリ</rt></ruby></div></td>
-    <td>800</td>
-    <td>1500</td>
-    <td rowspan="4">每天</td>
-    <td rowspan="2">8日</td>
-    <td>初期</td>
-    <td>约2年～3年</td>
-</tr>
-<tr>
-    <td><div><ruby>乌鸡<rt>黒ニワトリ</rt></ruby></div></td>
-    <td>2500</td>
-    <td>6000</td>
-    <td>第2年春</td>
-    <td>约2年～3年</td>
-</tr>
-<tr>
-    <td><div><ruby>牛<rt>ウシ</rt></ruby></div></td>
-    <td>1500</td>
-    <td>3000</td>
-    <td rowspan="4">20日</td>
-    <td>初期</td>
-    <td rowspan="2">约3年～4年</td>
-</tr>
-<tr>
-    <td><div><ruby>茶牛<rt>茶ウシ</rt></ruby></div></td>
-    <td>5500</td>
-    <td>13500</td>
-    <td>每天</td>
-</tr>
-<tr>
-    <td><div><ruby>羊<rt>ヒツジ</rt></ruby></div></td>
-    <td>3000</td>
-    <td>7000</td>
-    <td rowspan="2">4天</td>
-    <td>初期</td>
-    <td rowspan="2">约3年</td>
-</tr>
-<tr>
-    <td><div><ruby>黑羊<rt>黒ヒツジ</rt></ruby></div></td>
-    <td>4500</td>
-    <td>10000</td>
-    <td>第2年春</td>
-</tr>
-<tr>
-    <td><div><ruby>白色羊驼<rt>白いアルパカ</rt></ruby></div></td>
-    <td rowspan="2"></td>
-    <td rowspan="2">1800</td>
-    <td rowspan="2">6天</td>
-    <td rowspan="2">没有幼年的羊驼</td>
-    <td rowspan="2">第2年秋</td>
-    <td rowspan="2">约3年</td>
-</tr>
-<tr>
-    <td><div><ruby>茶色羊驼<rt>茶色いアルパ</rt></ruby></div></td>
-</tr>
-</table>
-<br><b>➤ 放牧</b>
-<br>将动物从小屋中推到外面就可以放牧
-<br>放牧会提高好感，降低压力
-<br>恶劣天气（雨、台风、大雪）放牧会使动物生病（大雪的天气放牧，鸡会被吹走）
-<br>晴天和雪天放牧没有问题
-<br>宠物可以帮助放牧
-<br>
-<br><b>➤ 饲料</b>
-<br>将饲料放入仓库（马车）后，可以随时从筒仓取出
-<br>饲料分为鸡饲料（80G），其他动物的饲料（60G）
-<br>一个饲料槽可以供3只鸡或者4只其他的动物使用
-<br>
-<br><b>➤ 好感值与压力值</b>
-<br>动物的好感越高，副产品的品质也会提升
-<br>压力过高以后，动物会生病
-<br>生病以后请使用「动物的药」进行治疗
-<br>生病后的动物无法获得副产品
-<br>生病后的动物，如果不管会死
-<br>
-<br><b>➤ 提高动物好感值的方法</b>
-<br>对话、放牧、喂食、用刷子清洁、获取副产品、铃铛、茶点
-<br>
-<br><b>➤ 会使动物的压力值变高的行为</b>
-<br>对动物使用锤子等道具、没有喂食、恶劣天气放牧、长期不用刷子清洁、21：00后影响到动物睡觉
-<br>
-<br><b>➤ 怀孕</b>
-<br>成年的动物可以怀孕，但是生病、脏的动物不能怀孕
-<br>怀孕中的家畜会被寄放到「ジェシュ･アニマルリー」
-<br>孩子会继承父母好感的一半
-<br>
-<br><b>➤ 茶点</b>
-<br>茶点分为茶点、蔬菜茶点、谷物茶点、鱼味茶点
-<br>茶点可以在「ジェシュ･アニマルリー」购买
-<br>为动物喂茶点可以提高动物和好感和副产品的产量
-<br>副产品的最高收获数为5个
-<br><br>
-<table cellspacing="0" border="1" cellpadding="5" rules="all">
-<tr>
-    <th>名称</th>
-    <th>普通茶点</th>
-    <th>野菜茶点</th>
-    <th>谷物茶点</th>
-    <th>鱼味茶点</th>
-</tr>
-<tr>
-    <td>鸡</td>
-    <td>2 / 4 / 6 / 8</td>
-    <td>15 / 30 / 45 / 60</td>
-    <td>4 / 8 / 12 / 16</td>
-    <td>10 / 20 / 30 / 40</td>
-</tr>
-<tr>
-    <td>黑鸡</td>
-    <td>1 / 2 / 3 / 4</td>
-    <td>14 / 28 / 42 / 56</td>
-    <td>2 / 4 / 6 / 8</td>
-    <td>14 / 28 / 42 / 56</td>
-</tr>
-<tr>
-    <td>牛</td>
-    <td>7 / 14 / 21 / 28</td>
-    <td>8 / 16 / 24 / 32</td>
-    <td>15 / 30 / 45 / 60</td>
-    <td>1 / 2 / 3 / 4</td>
-</tr>
-<tr>
-    <td>茶牛</td>
-    <td>4 / 8 / 12 / 16</td>
-    <td>6 / 12 / 18 / 24</td>
-    <td>20 / 40 / 60 / 80</td>
-    <td>1 / 2 / 3 / 4</td>
-</tr>
-<tr>
-    <td>羊</td>
-    <td>2 / 4 / 6 / 8</td>
-    <td>12 / 24 / 36 / 48</td>
-    <td>12 / 24 / 36 / 48</td>
-    <td>5 / 10 / 15 / 20</td>
-</tr>
-<tr>
-    <td>黑羊</td>
-    <td>1 / 2 / 3 / 4</td>
-    <td>15 / 30 / 45 / 60</td>
-    <td>9 / 18 / 27 / 36</td>
-    <td>6 / 12 / 18 / 24</td>
-</tr>
-<tr>
-    <td>白色羊驼</td>
-    <td rowspan="2">0 / 0 / 0 / 0</td>
-    <td rowspan="2">15 / 30 / 45 / 60</td>
-    <td rowspan="2">15 / 20 / 25 / 30</td>
-    <td rowspan="2">15 / 20 / 25 / 30</td>
-</tr>
-<tr>
-    <td>茶色羊驼</td>
-</tr>
-</table>
-<br><b>➤ 养蜂</b>
-<br>在蓝铃村扩建养蜂箱后可以开始养蜂
-<br>将蜂巢放入养蜂箱后，每隔7～8天可以采取一次蜂蜜
-<br>冬天不会产蜂蜜，次年春天需要重新在养蜂箱内放入蜂巢
-<br>
-<table cellspacing="0" border="1" cellpadding="5" rules="all">
-<tr>
-    <th>名称</th>
-    <th>条件</th>
-    <th>季节</th>
-</tr>
-<tr>
-    <td><div><ruby>蜂蜜<rt>ハチミツ</rt></ruby></div></td>
-    <td>-</td>
-    <td>-</td>
-</tr>
-<tr>
-    <td><div><ruby>春之蜂蜜<rt>春のハチミツ</rt></ruby></div></td>
-    <td rowspan="3">种植当季的蔬菜、谷物、花</td>
-    <td>春天</td>
-</tr>
-<tr>
-    <td><div><ruby>夏之蜂蜜<rt>夏のハチミツ</rt></ruby></div></td>
-    <td>夏天</td>
-</tr>
-<tr>
-    <td><div><ruby>秋之蜂蜜<rt>秋のハチミツ</rt></ruby></div></td>
-    <td>秋天</td>
-</tr><br>
-<tr>
-    <td><div><ruby>玫瑰蜂蜜<rt>バラのハチミツ</rt></ruby></div></td>
-    <td>所有的土地都种着玫瑰</td>
-    <td>冬天以外，10%几率</td>
-</tr>
-<tr>
-    <td><div><ruby>树木之蜂蜜<rt>樹木のハチミツ</rt></ruby></div></td>
-    <td>种植果树</td>
-    <td>冬天以外，30%几率</td>
-</tr>
-<tr>
-    <td><div><ruby>蜂皇浆<rt>ローヤルゼリー</rt></ruby></div></td>
-    <td>-</td>
-    <td>-</td>
-</tr>
-</table>
-<br><b>➤ 养殖</b>
-<br>在此花村扩建鱼塘以后
-<br>每次只能放入1条鱼，最多可以养殖到10条鱼
-<br>用鱼饲料可以增加鱼的繁殖速度和品质
+    <h1>动物</h1>
+    <h2>关于动物</h2>
+    <p>在蓝铃村的「杰修･动物屋」购买动物<br>
+        购买幼年的动物后，第二天之后会出售成年的动物<br>
+        每天会销售的动物是随机的<br>
+        可以在「杰修･动物屋」出售动物<br>
+        成年和幼年的动物都可以出售，但是不能出售怀孕中和生病的动物<br>
+        出售的价格会根据好感变动</p>
+    <h2>可以饲养的数量</h2>
+    <h3>蓝铃村</h3>
+    <p><b>初期：</b>10只鸡＋6只其他动物（牛、羊、羊驼）<br>
+        <b>扩建1次：</b>10只鸡＋11只其他动物<br>
+        <b>扩建2次：</b>10只鸡＋16只其他动物</p>
+    <h3>此花村</h3>
+    <p><b>全期：</b>2只鸡＋4只其他动物</p>
+    <table>
+        <tr>
+            <th>名称</th>
+            <th>购入价（G）<br>幼年</th>
+            <th>购入价（G）<br>成年</th>
+            <th>副产品</th>
+            <th>收获周期</th>
+            <th>成长时间</th>
+            <th>贩售条件</th>
+            <th>寿命</th>
+        </tr>
+        <tr>
+            <td>鸡</td>
+            <td>800</td>
+            <td>1500</td>
+            <td>鸡蛋</td>
+            <td rowspan="4">每天</td>
+            <td rowspan="2">8日</td>
+            <td>初期</td>
+            <td rowspan="2">约2年至3年2个月</td>
+        </tr>
+        <tr>
+            <td>黑鸡</td>
+            <td>2500</td>
+            <td>6000</td>
+            <td>黑鸡蛋</td>
+            <td>第2年春</td>
+        </tr>
+        <tr>
+            <td>牛</td>
+            <td>1500</td>
+            <td>3000</td>
+            <td>牛奶</td>
+            <td rowspan="4">20日</td>
+            <td>初期</td>
+            <td rowspan="2">约3年2个月至4年</td>
+        </tr>
+        <tr>
+            <td>茶牛</td>
+            <td>5500</td>
+            <td>13500</td>
+            <td>泽西牛奶</td>
+            <td>第2年春</td>
+        </tr>
+        <tr>
+            <td>羊</td>
+            <td>3000</td>
+            <td>7000</td>
+            <td>羊毛</td>
+            <td rowspan="2">4天</td>
+            <td>初期</td>
+            <td rowspan="2">约3年1个月</td>
+        </tr>
+        <tr>
+            <td>黑羊</td>
+            <td>4500</td>
+            <td>10000</td>
+            <td>好羊毛</td>
+            <td>第2年春</td>
+        </tr>
+        <tr>
+            <td>白色羊驼</td>
+            <td rowspan="2">-</td>
+            <td rowspan="2">1800</td>
+            <td>白色羊驼毛</td>
+            <td rowspan="2">6天</td>
+            <td rowspan="2">-</td>
+            <td rowspan="2">第2年秋</td>
+            <td rowspan="2">约3年</td>
+        </tr>
+        <tr>
+            <td>茶色羊驼</td>
+            <td>茶色羊驼毛</td>
+        </tr>
+    </table>
+    <p>在节日中获胜的动物有几率产出珍稀的副产品</p>
+    <p>
+        <b>鸡</b>：金蛋<br>
+        <b>牛</b>：奇迹牛奶<br>
+        <b>羊</b>：软羊毛
+    </p>
+    <h2>放牧</h2>
+    <p>将动物从小屋中推到外面就可以放牧<br>
+        放牧会提高好感，降低压力<br>
+        恶劣天气（雨、台风、大雪）放牧会使动物生病（大雪的天气放牧，鸡会被吹走）<br>
+        晴天和雪天放牧没有问题<br>
+        宠物可以帮助放牧</p>
+
+    <h2>饲料</h2>
+    <p>将饲料放入仓库（马车）后，可以随时从筒仓取出<br>
+        饲料分为鸡饲料（80G），其他动物的饲料（60G）<br>
+        一个饲料槽可以供3只鸡或者4只其他的动物使用</p>
+
+    <h2>好感值与压力值</h2>
+    <p>动物的好感越高，副产品的品质也会提升<br>
+        压力过高以后，动物会生病<br>
+        生病以后请使用「动物的药」进行治疗<br>
+        生病后的动物无法获得副产品<br>
+        生病后的动物，如果不管会死</p>
+
+    <h3>提高动物好感值的方法</h3>
+    <p>对话、放牧、喂食、用刷子清洁、获取副产品、铃铛、茶点</p>
+
+    <h3>会使动物的压力值变高的行为</h3>
+    <p>对动物使用锤子等道具<br>
+        没有喂食<br>
+        恶劣天气放牧<br>
+        长期不用刷子清洁<br>
+        21：00后影响到动物睡觉</p>
+
+    <h2>怀孕</h2>
+    <p>成年的动物可以怀孕，但是生病、脏的动物不能怀孕<br>
+        怀孕中的家畜会被寄放到「杰修･动物屋」<br>
+        孩子会继承父母好感的一半</p>
+
+    <h2>茶点</h2>
+    <p>茶点分为茶点、蔬菜茶点、谷物茶点、鱼味茶点<br>
+        茶点可以在「杰修･动物屋」购买<br>
+        为动物喂茶点可以提高动物和好感和副产品的产量<br>
+        副产品的最高收获数为5个</p>
+
+    <table>
+        <tr>
+            <th>名称</th>
+            <th>普通茶点</th>
+            <th>野菜茶点</th>
+            <th>谷物茶点</th>
+            <th>鱼味茶点</th>
+        </tr>
+        <tr>
+            <td>鸡</td>
+            <td>2 / 4 / 6 / 8</td>
+            <td>15 / 30 / 45 / 60</td>
+            <td>4 / 8 / 12 / 16</td>
+            <td>10 / 20 / 30 / 40</td>
+        </tr>
+        <tr>
+            <td>黑鸡</td>
+            <td>1 / 2 / 3 / 4</td>
+            <td>14 / 28 / 42 / 56</td>
+            <td>2 / 4 / 6 / 8</td>
+            <td>14 / 28 / 42 / 56</td>
+        </tr>
+        <tr>
+            <td>牛</td>
+            <td>7 / 14 / 21 / 28</td>
+            <td>8 / 16 / 24 / 32</td>
+            <td>15 / 30 / 45 / 60</td>
+            <td>1 / 2 / 3 / 4</td>
+        </tr>
+        <tr>
+            <td>茶牛</td>
+            <td>4 / 8 / 12 / 16</td>
+            <td>6 / 12 / 18 / 24</td>
+            <td>20 / 40 / 60 / 80</td>
+            <td>1 / 2 / 3 / 4</td>
+        </tr>
+        <tr>
+            <td>羊</td>
+            <td>2 / 4 / 6 / 8</td>
+            <td>12 / 24 / 36 / 48</td>
+            <td>12 / 24 / 36 / 48</td>
+            <td>5 / 10 / 15 / 20</td>
+        </tr>
+        <tr>
+            <td>黑羊</td>
+            <td>1 / 2 / 3 / 4</td>
+            <td>15 / 30 / 45 / 60</td>
+            <td>9 / 18 / 27 / 36</td>
+            <td>6 / 12 / 18 / 24</td>
+        </tr>
+        <tr>
+            <td>白色羊驼</td>
+            <td rowspan="2">0 / 0 / 0 / 0</td>
+            <td rowspan="2">15 / 30 / 45 / 60</td>
+            <td rowspan="2">15 / 20 / 25 / 30</td>
+            <td rowspan="2">15 / 20 / 25 / 30</td>
+        </tr>
+        <tr>
+            <td>茶色羊驼</td>
+        </tr>
+    </table>
+    <h2>养蜂</h2>
+    <p>在蓝铃村扩建养蜂箱后可以开始养蜂<br>
+        将蜂巢放入养蜂箱后，每隔7~8天可以采取一次蜂蜜<br>
+        冬天不会产蜂蜜，次年春天需要重新在养蜂箱内放入蜂巢</p>
+
+    <table>
+        <tr>
+            <th>名称</th>
+            <th>条件</th>
+            <th>季节</th>
+        </tr>
+        <tr>
+            <td>蜂蜜</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>春之蜂蜜</td>
+            <td rowspan="3">种植当季的蔬菜、谷物、花</td>
+            <td>春天</td>
+        </tr>
+        <tr>
+            <td>夏之蜂蜜</td>
+            <td>夏天</td>
+        </tr>
+        <tr>
+            <td>秋之蜂蜜</td>
+            <td>秋天</td>
+        </tr>
+        <tr>
+            <td>玫瑰蜂蜜</td>
+            <td>所有的土地都种着玫瑰</td>
+            <td>冬天以外，10%几率</td>
+        </tr>
+        <tr>
+            <td>树木之蜂蜜</td>
+            <td>种植果树</td>
+            <td>冬天以外，30%几率</td>
+        </tr>
+        <tr>
+            <td>蜂皇浆</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+    </table>
+    <h2>养殖</h2>
+    <p>在此花村扩建鱼塘以后<br>
+        每次只能放入1条鱼，最多可以养殖到10条鱼<br>
+        用鱼饲料可以增加鱼的繁殖速度和品质<br>
+        金枪鱼和比目鱼每月增加一个</p>
 </body>
+
 </html>

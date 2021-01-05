@@ -1,440 +1,444 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-cmn-Hans">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>种植</title>
-<link rel="stylesheet" type="text/css" href="../twotown.css">
-<style>td {background-color: transparent;}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+    <title>农作</title>
+    <link rel="stylesheet" media="screen and (max-width:800px)" type="text/css" href="../css/szc_mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width:801px)" type="text/css" href="../css/szc.css" />
 </head>
+
 <body>
-<h3>种植</h3>
-<b>➤ 垄</b>
-<br>按住十字键移动的同时，使用锄头，可以将土地连成垄。
-<br>对垄浇水可以对垄内所有的作物生效，取决与水壶容量
-<br>一天可以浇2次水，间隔时间为12小时
-<br>谷物和果树类作物不用浇水
-<br>
-<br><b>➤ 肥料</b>
-<br>作物品质中，每0.5☆等于30P的肥料
-<br>5☆的作物内部值为241P以上
-<br>店铺里贩卖的种子，初期为59P
-<br>未使用的肥料为100P
-<br>肥料会影响到附近1格的作物或整个垄的作物。
-<br>100〜50P的状态是满瓶，49〜25P的状态是半瓶，24〜0P的状态是残余
-<br>
-<br>肥料中有不能提高作物品质的特殊肥料
-<br>自动浇水的<b>水ひりょう</b>
-<br>作物快速生长的<b>速さひりょう</b>
-<br>增加作物收获数的<b>数ひりょう</b>
-<br><br>
-<table cellspacing="0" border="1" cellpadding="5" rules="all">
-    <tr>
-        <th colspan="5" class="title_spring">春</th>
-    </tr>
-    <tr class="class_spring">
-        <td>作物</td>
-        <td>价格 (G)</td>
-        <td>成长天数</td>
-        <td>贩售条件</td>
-    </tr>
-    <tr class="spring">
-        <td><div><ruby>芜菁<rt>かぶ</rt></ruby></div></td>
-        <td>120</td>
-        <td>3～5</td>
-        <td>1年</td>
-    </tr>
-
-    <tr class="spring">
-        <td><div><ruby>土豆<rt>じゃがいも</rt></ruby></div></td>
-        <td>170</td>
-        <td>4～7</td>
-        <td>1年</td>
-    </tr>
-
-    <tr class="spring">
-        <td><div><ruby>卷心菜<rt>きゃべつ</rt></ruby></div></td>
-        <td>300</td>
-        <td>8～14</td>
-        <td>2年</td>
-    </tr>
-
-    <tr class="spring">
-        <td><div><ruby>芦笋<rt>アスパラガス</rt></ruby></div></td>
-        <td>240</td>
-        <td>6～10</td>
-        <td>3年</td>
-    </tr>
-
-    <tr class="spring">
-        <td><div><ruby>黄瓜<rt>きゅうり</rt></ruby></div></td>
-        <td>350</td>
-        <td>6～11 (3)</td>
-        <td>2年</td>
-    </tr>
-
-    <tr class="spring">
-        <td><div><ruby>草莓<rt>いちご</rt></ruby></div></td>
-        <td>850</td>
-        <td>9～17 (3～4)</td>
-        <td>3年</td>
-    </tr>
-
-    <tr class="spring">
-        <td><div><ruby>春茶叶<rt>春茶葉</rt></ruby></div></td>
-        <td>1000</td>
-        <td>24 (4)</td>
-        <td>2年冬</td>
-    </tr>
-
-    <tr class="spring">
-        <td><div><ruby>粉红玫瑰<rt>ピンクローズ</rt></ruby></div></td>
-        <td>260</td>
-        <td>6～10</td>
-        <td></td>
-    </tr>
-
-    <tr class="spring">
-        <td><div><ruby>木春菊<rt>マーガレット</rt></ruby></div></td>
-        <td>140</td>
-        <td>4～7</td>
-        <td></td>
-    </tr>
-
-    <tr class="spring">
-        <td><div><ruby>康乃馨<rt>カーネーション</rt></ruby></div></td>
-        <td>250</td>
-        <td>6～10</td>
-        <td></td>
-    </tr>
-
-    <tr class="spring">
-        <td><div><ruby>百合<rt>カサブランカ</rt></ruby></div></td>
-        <td>280</td>
-        <td>8～14</td>
-        <td></td>
-    </tr>
-
-    <tr class="spring">
-        <td><div><ruby>咖啡<rt>コーヒー</rt></ruby></div></td>
-        <td>120</td>
-        <td>24</td>
-        <td>3年</td>
-    </tr>
-
-    <tr class="spring">
-        <td><div><ruby>樱桃<rt>さくらんぼ</rt></ruby></div></td>
-        <td>100</td>
-        <td>52 (3)</td>
-        <td>2年</td>
-    </tr>
-</table>
-<br>
-<table cellspacing="0" border="1" cellpadding="5" rules="all">
-    <tr>
-        <th colspan="5" class="title_summer">夏</th>
-    </tr>
-    <tr class="class_summer">
-        <td>作物</td>
-        <td>价格 (G)</td>
-        <td>成长天数</td>
-        <td>贩售条件</td>
-    </tr>
-
-    <tr class="summer">
-        <td><div><ruby>洋葱<rt>たまねぎ</rt></ruby></div></td>
-        <td>120</td>
-        <td>4～7</td>
-        <td>2年</td>
-    </tr>
-
-    <tr class="summer">
-        <td><div><ruby>南瓜<rt>かぼちゃ</rt></ruby></div></td>
-        <td>220</td>
-        <td>8～14</td>
-        <td>2年</td>
-    </tr>
-
-    <tr class="summer">
-        <td><div><ruby>水萝卜<rt>ラディッシュ</rt></ruby></div></td>
-        <td>250</td>
-        <td>3～5</td>
-        <td>1年</td>
-    </tr>
-
-    <tr class="summer">
-        <td><div><ruby>番茄<rt>トマト</rt></ruby></div></td>
-        <td>100</td>
-        <td>7～13 (3)</td>
-        <td>2年</td>
-    </tr>
-
-    <tr class="summer">
-        <td><div><ruby>玉米<rt>とうもろこし</rt></ruby></div></td>
-        <td>490</td>
-        <td>8～15 (3～4)</td>
-        <td>1年</td>
-    </tr>
-
-    <tr class="summer">
-        <td><div><ruby>菠萝<rt>パイナップル</rt></ruby></div></td>
-        <td>4000</td>
-        <td>9～17 (3～4)</td>
-        <td>3年</td>
-    </tr>
-
-    <tr class="summer">
-        <td><div><ruby>西瓜<rt>すいか</rt></ruby></div></td>
-        <td>3000</td>
-        <td>11～20 (4～5)</td>
-        <td>3年</td>
-    </tr>
-
-    <tr class="summer">
-        <td><div><ruby>夏茶叶<rt>夏茶葉</rt></ruby></div></td>
-        <td>1000</td>
-        <td>24 (4)</td>
-        <td>2年冬</td>
-    </tr>
-
-    <tr class="summer">
-        <td><div><ruby>向日葵<rt>ひまわり</rt></ruby></div></td>
-        <td>260</td>
-        <td>8～14</td>
-        <td></td>
-    </tr>
-
-    <tr class="summer">
-        <td><div><ruby>红玫瑰<rt>レッドローズ</rt></ruby></div></td>
-        <td>230</td>
-        <td>6～10</td>
-        <td></td>
-    </tr>
-
-    <tr class="summer">
-        <td><div><ruby>桃子<rt>もも</rt></ruby></div></td>
-        <td>250</td>
-        <td>39 (3)</td>
-        <td>2年</td>
-    </tr>
-
-    <tr class="summer">
-        <td><div><ruby>香蕉<rt>バナナ</rt></ruby></div></td>
-        <td>300</td>
-        <td>59 (4)</td>
-        <td>2年</td>
-    </tr>
-</table>
-<br>
-<table cellspacing="0" border="1" cellpadding="5" rules="all">
-    <tr>
-        <th colspan="5" class="title_autumn">秋</th>
-    </tr>
-    <tr class="class_autumn">
-        <td>作物</td>
-        <td>价格 (G)</td>
-        <td>成长天数</td>
-        <td>贩售条件</td>
-    </tr>
-    <tr class="autumn">
-        <td><div><ruby>菠菜<rt>ほうれんそう</rt></ruby></div></td>
-        <td>290</td>
-        <td>3～5</td>
-        <td>2年</td>
-    </tr>
-
-    <tr class="autumn">
-        <td><div><ruby>胡萝卜<rt>にんじん</rt></ruby></div></td>
-        <td>150</td>
-        <td>4～7</td>
-        <td>1年</td>
-    </tr>
-
-    <tr class="autumn">
-        <td><div><ruby>茄子<rt>なす</rt></ruby></div></td>
-        <td>330</td>
-        <td>7～13 (3)</td>
-        <td>1年</td>
-    </tr>
-
-    <tr class="autumn">
-        <td><div><ruby>地瓜<rt>さつまいも</rt></ruby></div></td>
-        <td>950</td>
-        <td>4～6 (2)</td>
-        <td>2年</td>
-    </tr>
-
-    <tr class="autumn">
-        <td><div><ruby>青椒<rt>ピーマン</rt></ruby></div></td>
-        <td>200</td>
-        <td>7～13 (3)</td>
-        <td>3年</td>
-    </tr>
-
-    <tr class="autumn">
-        <td><div><ruby>秋茶叶<rt>秋茶葉</rt></ruby></div></td>
-        <td>1000</td>
-        <td>24 (4)</td>
-        <td>2年冬</td>
-    </tr>
-
-    <tr class="autumn">
-        <td><div><ruby>瞿麦<rt>なでしこ</rt></ruby></div></td>
-        <td>120</td>
-        <td>4～7</td>
-        <td></td>
-    </tr>
-
-    <tr class="autumn">
-        <td><div><ruby>白玫瑰<rt>ホワイトローズ</rt></ruby></div></td>
-        <td>200</td>
-        <td>7～13</td>
-        <td></td>
-    </tr>
-
-    <tr class="autumn">
-        <td><div><ruby>非洲菊<rt>ガーベラ</rt></ruby></div></td>
-        <td>250</td>
-        <td>6～10</td>
-        <td></td>
-    </tr>
-
-    <tr class="autumn">
-        <td><div><ruby>苹果<rt>りんご</rt></ruby></div></td>
-        <td>140</td>
-        <td>39 (3)</td>
-        <td>2年</td>
-    </tr>
-
-    <tr class="autumn">
-        <td><div><ruby>葡萄<rt>ぶどう</rt></ruby></div></td>
-        <td>330</td>
-        <td>52 (3)</td>
-        <td>2年</td>
-    </tr>
-
-    <tr class="autumn">
-        <td><div><ruby>可可<rt>カカオ</rt></ruby></div></td>
-        <td>2000</td>
-        <td>59 (4)</td>
-        <td>2年</td>
-    </tr>
-
-</table>
-<br>
-<table cellspacing="0" border="1" cellpadding="5" rules="all">
-    <tr>
-        <th colspan="5" class="title_winter">冬</th>
-    </tr>
-    <tr class="class_winter">
-        <td>作物</td>
-        <td>价格 (G)</td>
-        <td>成长天数</td>
-        <td>贩售条件</td>
-    </tr>
-    <tr class="winter">
-        <td><div><ruby>萝卜<rt>大根</rt></ruby></div></td>
-        <td>110</td>
-        <td>3～5</td>
-        <td>1年</td>
-    </tr>
-
-    <tr class="winter">
-        <td><div><ruby>白菜<rt>白菜</rt></ruby></div></td>
-        <td>370</td>
-        <td>7～13 (3)</td>
-        <td>2年</td>
-    </tr>
-
-    <tr class="winter">
-        <td><div><ruby>雪莲<rt>スノードロップ</rt></ruby></div></td>
-        <td>230</td>
-        <td>6～10</td>
-        <td></td>
-    </tr>
-
-    <tr class="winter">
-        <td><div><ruby>龙胆<rt>りんどう</rt></ruby></div></td>
-        <td>140</td>
-        <td>4～7</td>
-        <td></td>
-    </tr>
-
-    <tr class="winter">
-        <td><div><ruby>蓝色妖姬<rt>ブルーローズ</rt></ruby></div></td>
-        <td>1500</td>
-        <td>11～20</td>
-        <td></td>
-    </tr>
-
-    <tr class="winter">
-        <td><div><ruby>橘子<rt>みかん</rt></ruby></div></td>
-        <td>590</td>
-        <td>52</td>
-        <td>2年</td>
-    </tr>
-
-</table>
-<br>
-<table cellspacing="0" border="1" cellpadding="5" rules="all">
-<tr>
-    <th colspan="5" class="title_grain">其他</th>
-</tr>
-<tr class="class_grain">
-    <td>作物</td>
-    <td>季节</td>
-    <td>价格 (G)</td>
-    <td>成长天数</td>
-    <td>贩售条件</td>
-</tr>
-    <tr class="grain">
-        <td><div><ruby>小麦<rt>小麦</rt></ruby></div></td>
-        <td>全年</td>
-        <td>60</td>
-        <td>27</td>
-        <td>1年</td>
-    </tr>
-
-    <tr class="grain">
-        <td><div><ruby>荞麦<rt>そば</rt></ruby></div></td>
-        <td>秋、冬</td>
-        <td>80</td>
-        <td>34</td>
-        <td>1年</td>
-    </tr>
-
-    <tr class="grain">
-        <td><div><ruby>大豆<rt>大豆</rt></ruby></div></td>
-        <td>夏、秋</td>
-        <td>100</td>
-        <td>43</td>
-        <td>1年</td>
-    </tr>
-
-    <tr class="grain">
-        <td><div><ruby>水稻<rt>お米</rt></ruby></div></td>
-        <td>春</td>
-        <td>90</td>
-        <td>60</td>
-        <td>2年</td>
-    </tr>
-
-    <tr class="grain">
-        <td><div><ruby>稻穗<rt>いなほ</rt></ruby></div></td>
-        <td>秋</td>
-        <td>90</td>
-        <td>63</td>
-        <td></td>
-    </tr>
-
-    <tr class="grain">
-        <td><div><ruby>茶树<rt>お茶</rt></ruby></div></td>
-        <td>冬天以外</td>
-        <td>1000</td>
-        <td>24 (4)</td>
-        <td>2年冬</td>
-    </tr>
-</table>
+    <h1>农作</h1>
+    <h2>如何种植</h2>
+    <p>先用「镰刀」把草砍掉，然后在土地上使用「锄头」挖坑，使用「种子」进行播种。<br>
+        每天使用「洒水壶」浇水，过一段时间就可以收获了。<br>
+        在此花村「种子店」购买作物的种子，蓝铃村的「花店」购买花的种子。</p>
+    <h2>垄</h2>
+    <p>按住十字键移动的同时，使用「锄头」，可以将土地连成垄。<br>
+        对垄浇水可以对垄内所有的作物生效，取决与水壶容量。<br>
+        在垄上放置的肥料，对整个垄都有效。</p>
+    <h2>浇水</h2>
+    <p>一天可以浇2次水，间隔时间为12小时。<br>
+        种子说明中的最大天数为每天浇水1次的收获时间。<br>
+        第2次浇水的浇水量为0.5天，每天的最大浇水量为1.5天。<br>
+        如果下午或一整天下都雨，水量固定为1天。<br>
+        如果早晨下雨，则可以在下午6点再次浇水。<br>
+        谷物和果树类作物不用浇水。</p>
+    <h2>肥料</h2>
+    <p>作物品质中，每0.5☆等于30P的肥料，5☆的作物内部值为241P以上。<br>
+        店铺里贩卖的种子，初期为59P，未使用的肥料为100P。<br>
+        100~50P的状态是满瓶，49~25P的状态是半瓶，24~0P的状态是残余。<br>
+        肥料会影响到附近1格的作物或整个垄的作物，同时使用多个肥料，效果可以叠加。<br>
+        使用「锤子」可以摧毁土地中的肥料。<br>
+        肥料每天为作物提供1P，作物处于可收获状态时，不吸收肥料。</p>
+    <p class="gray">例如，种植的作物从种子到收获为5天，则需要49个肥料才能达到5☆作物。<br>
+        初期为59P，每个肥料每天提供1P，最后1天收获，成长状态为4天，5☆作物最少241P。<br>
+        （59P  49P
+        × 4天 = 255P）</p>
+    <h3>果树施肥</h3>
+    <p>果树占9个格子，每个格子单独判定肥料，并可叠加。<br>
+        使用16个肥料将果树围一圈，每天果树可以获得32P的加成。</p><img src="1.png">
+    <p class="gray">四角每格可吸收5格肥料，四边每格可吸收3格肥料，中间一格无法吸收肥料。<br>
+        4格 × 5P  4格 × 3P = 32P</p>
+    <h3>特殊肥料</h3>
+    <p>肥料中有不能提高作物品质的特殊肥料。<br>
+        这些肥料可以用贤者大人的炼金术作成。</p>
+    <h4>水肥料</h4>
+    <p>水肥料可以自动浇水，其中包含100格水。<br>
+        效果范围和使用方式与普通肥料相同。<br>
+        用水肥料浇的水要经过一天才能干燥（与雨水相同）。<br>
+        雨天不会消耗，但午后下雨的情况会被消耗。<br>
+        由于内部的水会被消耗，因此如果将其放入100个或更多的垄中，一天之内就会消失。<br>
+        原材料使用的「皇家奶茶」，即使在料理中也是很难做成的。</p>
+    <h4>快速肥料</h4>
+    <p>快速肥料可以使作物快速成长。<br>
+        作物成长判定时的增长量为0.5天。<br>
+        可以跳过作物各种成长阶段（芽状态，蕾状态，花状态等），最短为1天。<br>
+        例如，通常需要3天才能重新收获的西红柿，可以在2天内重新收获。<br>
+        消耗的时间是在作物成长判定时。（AM 6:00?）<br>
+        也是很难入手，因为它使用了各种需要费时制作的泡菜。<br>
+        与其他几种肥料结合使用，可以大量生产连作作物。</p>
+    <h4>倍速肥料</h4>
+    <p>倍速肥料可以使作物的收获数量1。<br>
+        效果范围与普通肥料相同。<br>
+        肥料消耗是在作物结出果实的时候。<br>
+        在作物成熟的那天之前使用，否则无效。<br>
+        每个作物消耗1点，共100点。<br>
+        树木和垄等受影响的作物越多，消耗速度就越快。<br>
+        仅蓝玫瑰、菠萝和西瓜等收获周期长且高价值的作物值得使用。</p>
+    <h2>作物</h2>
+    <br>
+    <table>
+        <tr>
+            <th colspan="4" id="spring">春</th>
+        </tr>
+        <tr>
+            <th class="spring">作物</th>
+            <th class="spring">价格(G)</th>
+            <th class="spring">成长天数</th>
+            <th class="spring">贩售条件</th>
+        </tr>
+        <tr>
+            <td class="spring">芜菁</td>
+            <td class="spring">120</td>
+            <td class="spring">4~5</td>
+            <td class="spring">初期</td>
+        </tr>
+        <tr>
+            <td class="spring">土豆</td>
+            <td class="spring">170</td>
+            <td class="spring">5~7</td>
+            <td class="spring">初期</td>
+        </tr>
+        <tr>
+            <td class="spring">卷心菜</td>
+            <td class="spring">300</td>
+            <td class="spring">10~14</td>
+            <td class="spring">第2年以后或料理大会</td>
+        </tr>
+        <tr>
+            <td class="spring">黄瓜</td>
+            <td class="spring">350</td>
+            <td class="spring">8~11<br>
+                (2~3)</td>
+            <td class="spring">第2年以后或料理大会</td>
+        </tr>
+        <tr>
+            <td class="spring">芦笋</td>
+            <td class="spring">240</td>
+            <td class="spring">7~10</td>
+            <td class="spring">第3年以后</td>
+        </tr>
+        <tr>
+            <td class="spring">草莓</td>
+            <td class="spring">850</td>
+            <td class="spring">12~17<br>
+                (3~4)</td>
+            <td class="spring">第2年以后或料理大会</td>
+        </tr>
+        <tr>
+            <td class="spring">春茶叶</td>
+            <td class="spring">1000</td>
+            <td class="spring">24 (4)</td>
+            <td class="spring">第2年冬以后</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th colspan="4" id="summer">夏</th>
+        </tr>
+        <tr>
+            <th class="summer">作物</th>
+            <th class="summer">价格(G)</th>
+            <th class="summer">成长天数</th>
+            <th class="summer">贩售条件</th>
+        </tr>
+        <tr>
+            <td class="summer">番茄</td>
+            <td class="summer">100</td>
+            <td class="summer">9~13<br>
+                (2~3)</td>
+            <td class="summer">第2年以后或料理大会</td>
+        </tr>
+        <tr>
+            <td class="summer">玉米</td>
+            <td class="summer">490</td>
+            <td class="summer">10~15<br>
+                (3~4)</td>
+            <td class="summer">初期</td>
+        </tr>
+        <tr>
+            <td class="summer">洋葱</td>
+            <td class="summer">120</td>
+            <td class="summer">5~7</td>
+            <td class="summer">第2年以后或料理大会</td>
+        </tr>
+        <tr>
+            <td class="summer">西瓜</td>
+            <td class="summer">3000</td>
+            <td class="summer">14~20<br>
+                (4~5)</td>
+            <td class="summer">第3年以后</td>
+        </tr>
+        <tr>
+            <td class="summer">菠萝</td>
+            <td class="summer">4000</td>
+            <td class="summer">12~17<br>
+                (3~4)</td>
+            <td class="summer">第3年以后</td>
+        </tr>
+        <tr>
+            <td class="summer">南瓜</td>
+            <td class="summer">220</td>
+            <td class="summer">10~14</td>
+            <td class="summer">第2年以后</td>
+        </tr>
+        <tr>
+            <td class="summer">水萝卜</td>
+            <td class="summer">250</td>
+            <td class="summer">4~5</td>
+            <td class="summer">初期</td>
+        </tr>
+        <tr>
+            <td class="summer">夏茶叶</td>
+            <td class="summer">1000</td>
+            <td class="summer">24 (4)</td>
+            <td class="summer">第2年冬以后</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th colspan="4" id="autumn">秋</th>
+        </tr>
+        <tr>
+            <th class="autumn">作物</th>
+            <th class="autumn">价格(G)</th>
+            <th class="autumn">成长天数</th>
+            <th class="autumn">贩售条件</th>
+        </tr>
+        <tr>
+            <td class="autumn">茄子</td>
+            <td class="autumn">330</td>
+            <td class="autumn">9~13<br>
+                (2~3)</td>
+            <td class="autumn">初期</td>
+        </tr>
+        <tr>
+            <td class="autumn">胡萝卜</td>
+            <td class="autumn">150</td>
+            <td class="autumn">5~7</td>
+            <td class="autumn">初期</td>
+        </tr>
+        <tr>
+            <td class="autumn">地瓜</td>
+            <td class="autumn">950</td>
+            <td class="autumn">4~6<br>
+                (2)</td>
+            <td class="autumn">第2年以后或料理大会</td>
+        </tr>
+        <tr>
+            <td class="autumn">青椒</td>
+            <td class="autumn">200</td>
+            <td class="autumn">9~13<br>
+                (2~3)</td>
+            <td class="autumn">第3年以后</td>
+        </tr>
+        <tr>
+            <td class="autumn">菠菜</td>
+            <td class="autumn">290</td>
+            <td class="autumn">4~5</td>
+            <td class="autumn">第2年以后或料理大会</td>
+        </tr>
+        <tr>
+            <td class="autumn">秋茶叶</td>
+            <td class="autumn">1000</td>
+            <td class="autumn">24 (4)</td>
+            <td class="autumn">第2年冬以后</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th colspan="4" id="winter">冬</th>
+        </tr>
+        <tr>
+            <th class="winter">作物</th>
+            <th class="winter">价格(G)</th>
+            <th class="winter">成长天数</th>
+            <th class="winter">贩售条件</th>
+        </tr>
+        <tr>
+            <td class="winter">萝卜</td>
+            <td class="winter">110</td>
+            <td class="winter">4~5</td>
+            <td class="winter">初期</td>
+        </tr>
+        <tr>
+            <td class="winter">白菜</td>
+            <td class="winter">370</td>
+            <td class="winter">9~13<br>
+                (2~3)</td>
+            <td class="winter">第2年以后或料理大会</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th colspan="4" id="flower">花</th>
+        </tr>
+        <tr>
+            <th class="plant">季节</th>
+            <th class="plant">作物</th>
+            <th class="plant">价格(G)</th>
+            <th class="plant">成长天数</th>
+        </tr>
+        <tr>
+            <th rowspan="4" class="spring">春</th>
+            <td class="spring">粉红玫瑰</td>
+            <td class="spring">260</td>
+            <td class="spring">7~10</td>
+        </tr>
+        <tr>
+            <td class="spring">木春菊</td>
+            <td class="spring">140</td>
+            <td class="spring">5~7</td>
+        </tr>
+        <tr>
+            <td class="spring">康乃馨</td>
+            <td class="spring">250</td>
+            <td class="spring">7~10</td>
+        </tr>
+        <tr>
+            <td class="spring">卡萨布兰卡</td>
+            <td class="spring">280</td>
+            <td class="spring">10~14</td>
+        </tr>
+        <tr>
+            <th rowspan="2" class="summer">夏</th>
+            <td class="summer">向日葵</td>
+            <td class="summer">260</td>
+            <td class="summer">10~14</td>
+        </tr>
+        <tr>
+            <td class="summer">红玫瑰</td>
+            <td class="summer">230</td>
+            <td class="summer">7~10</td>
+        </tr>
+        <tr>
+            <th rowspan="3" class="autumn">秋</th>
+            <td class="autumn">瞿麦</td>
+            <td class="autumn">120</td>
+            <td class="autumn">5~7</td>
+        </tr>
+        <tr>
+            <td class="autumn">白玫瑰</td>
+            <td class="autumn">200</td>
+            <td class="autumn">9~13</td>
+        </tr>
+        <tr>
+            <td class="autumn">非洲菊</td>
+            <td class="autumn">250</td>
+            <td class="autumn">7~10</td>
+        </tr>
+        <tr>
+            <th rowspan="3" class="winter">冬</th>
+            <td class="winter">雪花莲</td>
+            <td class="winter">230</td>
+            <td class="winter">7~10</td>
+        </tr>
+        <tr>
+            <td class="winter">龙胆</td>
+            <td class="winter">140</td>
+            <td class="winter">5~7</td>
+        </tr>
+        <tr>
+            <td class="winter">蓝玫瑰</td>
+            <td class="winter">1500</td>
+            <td class="winter">14~20</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th colspan="4" id="tree">果树</th>
+        </tr>
+        <tr>
+            <th class="plant">季节</th>
+            <th class="plant">作物</th>
+            <th class="plant">价格(G)</th>
+            <th class="plant">成长天数</th>
+        </tr>
+        <tr>
+            <th rowspan="2" class="spring">春</th>
+            <td class="spring">咖啡豆</td>
+            <td class="spring">120</td>
+            <td class="spring">24 (2)</td>
+        </tr>
+        <tr>
+            <td class="spring">樱桃</td>
+            <td class="spring">100</td>
+            <td class="spring">52 (3)</td>
+        </tr>
+        <tr>
+            <th rowspan="2" class="summer">夏</th>
+            <td class="summer">桃子</td>
+            <td class="summer">250</td>
+            <td class="summer">39 (3)</td>
+        </tr>
+        <tr>
+            <td class="summer">香蕉</td>
+            <td class="summer">300</td>
+            <td class="summer">59 (4)</td>
+        </tr>
+        <tr>
+            <th rowspan="3" class="autumn">秋</th>
+            <td class="autumn">苹果</td>
+            <td class="autumn">140</td>
+            <td class="autumn">39 (3)</td>
+        </tr>
+        <tr>
+            <td class="autumn">葡萄</td>
+            <td class="autumn">330</td>
+            <td class="autumn">52 (3)</td>
+        </tr>
+        <tr>
+            <td class="autumn">可可</td>
+            <td class="autumn">2000</td>
+            <td class="autumn">59 (4)</td>
+        </tr>
+        <tr>
+            <th class="winter">冬</th>
+            <td class="winter">橘子</td>
+            <td class="winter">590</td>
+            <td class="winter">52 (3)</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th colspan="5" id="grain">谷物</th>
+        </tr>
+        <tr>
+            <th>作物</th>
+            <th>收获季节</th>
+            <th>价格(G)</th>
+            <th>成长天数</th>
+            <th>贩售条件</th>
+        </tr>
+        <tr>
+            <td>水稻</td>
+            <td>秋</td>
+            <td>90</td>
+            <td>63</td>
+            <td>第2年春天以后</td>
+        </tr>
+        <tr>
+            <td>小麦</td>
+            <td rowspan="3">全年</td>
+            <td>60</td>
+            <td>27</td>
+            <td>第1年冬天以后</td>
+        </tr>
+        <tr>
+            <td>荞麦</td>
+            <td>80</td>
+            <td>34</td>
+            <td>第1年秋天以后</td>
+        </tr>
+        <tr>
+            <td>大豆</td>
+            <td>100</td>
+            <td>43</td>
+            <td>第1年夏天以后</td>
+        </tr>
+    </table>
+    <p>※ 果树的种子第2年以后可以在商店中购买。</p>
+    <p>※ 水稻只能在春天播种，秋天收获。</p>
 </body>
+
 </html>
