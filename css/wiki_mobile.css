@@ -207,3 +207,9 @@ span.fb {
 span.mail {
     margin-left: 2em;
 }
+
+.qrcode {
+    width: 100%;
+    height: auto;
+    min-height: 260px;
+}
