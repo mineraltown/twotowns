@@ -211,5 +211,10 @@ span.mail {
 .qrcode {
     width: 100%;
     height: auto;
-    min-height: 260px;
+    min-height: 256px;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
