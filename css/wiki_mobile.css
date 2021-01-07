@@ -142,16 +142,14 @@ iframe {
 
 .main_default {
     margin-top: 1em;
+}
+
+.card {
     display: flex;
     display: -webkit-flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-}
-
-.cassette {
-    width: 40%;
-    padding-left: 2em;
 }
 
 .card_cassette {
@@ -162,13 +160,9 @@ iframe {
     align-items: center;
 }
 
-.card {
-    height: auto;
-    display: flex;
-    display: -webkit-flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+.cassette {
+    width: 40%;
+    padding-left: 2em;
 }
 
 .card_text {
@@ -177,16 +171,12 @@ iframe {
 }
 
 .introduce {
-    width: 100%;
-    height: auto;
     background-color: #eeeeee;
     margin: 1em 0 1em 0;
     padding: 1em 2em 1em 2em;
 }
 
 .feedback {
-    width: 100%;
-    height: auto;
     padding: 1em 2em 1em 2em;
     display: flex;
     display: -webkit-flex;
@@ -214,7 +204,6 @@ span.mail {
 
 .qrcode {
     width: 100%;
-    height: auto;
     min-height: 256px;
     display: flex;
     display: -webkit-flex;
