@@ -177,12 +177,16 @@ iframe {
 }
 
 .introduce {
+    width: 100%;
+    height: auto;
     background-color: #eeeeee;
     margin: 1em 0 1em 0;
     padding: 1em 2em 1em 2em;
 }
 
 .feedback {
+    width: 100%;
+    height: auto;
     padding: 1em 2em 1em 2em;
     display: flex;
     display: -webkit-flex;
