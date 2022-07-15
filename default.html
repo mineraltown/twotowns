@@ -1,54 +1,217 @@
 <!DOCTYPE html>
-<html lang="zh-cmn-Hans" class="default">
+<html lang="zh-cmn-Hans">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
-    <link rel="stylesheet" media="screen and (min-width:801px)" type="text/css" href="./css/wiki.css" />
-    <link rel="stylesheet" media="screen and (max-width:800px)" type="text/css" href="./css/wiki_mobile.css" />
-    <title>牧场物语 双子村 WIKI - 矿石镇的攻略百科</title>
+    <title>Default</title>
+    <style>
+        html {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            display: -webkit-flex;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        body {
+            color: #555;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        a {
+            color: #555555;
+            text-decoration: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            transition: color 0.25s;
+            -moz-transition: color 0.25s;
+            -webkit-transition: color 0.25s;
+            -o-transition: color 0.25s;
+        }
+
+        a:hover {
+            color: #198d44;
+        }
+
+        .note {
+            width: auto;
+            padding: 1em 2em 1em 2em;
+            line-height: 1.7em;
+        }
+
+        @media only screen and (min-width: 801px) {
+            body {
+                margin: 5em 0 0 0;
+            }
+
+            .note {
+                background-color: #ddd;
+            }
+
+            .card {
+                width: 900px;
+                height: auto;
+                display: flex;
+                display: -webkit-flex;
+                flex-flow: row nowrap;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .card_text {
+                margin: 30px;
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            body {
+                margin: 1em 0 0 0;
+                font-size: 0.8em;
+                padding-bottom: 2em;
+            }
+
+            .note {
+                background-color: #ccc;
+            }
+
+            .card {
+                display: flex;
+                display: -webkit-flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .card_cassette {
+                display: flex;
+                display: -webkit-flex;
+                flex-flow: row nowrap;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .cassette {
+                width: 40%;
+                padding-left: 2em;
+            }
+
+            .card_text {
+                line-height: 1em;
+                margin: 2em;
+            }
+        }
+
+        .flex_center {
+            display: flex;
+            display: -webkit-flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        @media only screen and (min-width: 801px) {
+            .contact_us {
+                padding-left: 100px;
+                display: flex;
+                display: -webkit-flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            .contact_us img {
+                width: 150px;
+            }
+
+            .contact_text {
+                margin-left: 2em;
+            }
+
+            .flex_center {
+                padding: 0;
+                margin: 0;
+            }
+
+            .flex_center img {
+                width: 24px;
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            .contact_us {
+                margin-top: 1em;
+                display: flex;
+                display: -webkit-flex;
+                flex-flow: column wrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding-left: 2em;
+            }
+
+            .contact_us img {
+                width: 120px;
+            }
+
+            .contact_text {
+                margin-top: 1em;
+            }
+
+            .flex_center {
+                padding: 0;
+                margin: 0;
+            }
+
+            .flex_center img {
+                width: 24px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div class="main_default">
-        <div class="card">
-            <div class="card_cassette">
-                <img class="cassette" src="soft_big_futago.png">
-                <div class="card_text">
-                    <p>牧场物语 双子村</p>
-                    <p>发售日期：2010/7/8</p>
-                    <p>对应机器：任天堂DS</p>
-                    <p>官方网站：<a href="https://www.bokumono.com/series/futago/" target="_blank">牧場物語 ふたごの村</a></p>
-                </div>
-            </div>
-            <div class="card_cassette">
-                <img class="cassette" src="soft_big_futago_plus.png">
-                <div class="card_text">
-                    <p>牧场物语 双子村＋</p>
-                    <p>发售日期：2017/12/14</p>
-                    <p>对应机器：任天堂3DS</p>
-                    <p>官方网站：<a href="https://www.bokumono.com/series/twin_plus/" target="_blank">牧場物語 ふたごの村＋</a></p>
-                </div>
+    <div class="card">
+        <div class="card_cassette">
+            <img class="cassette" src="soft_big_futago.png">
+            <div class="card_text">
+                <h3>牧场物语 双子村</h3>
+                <p>发售日期：2010/7/8</p>
+                <p>对应机器：任天堂DS</p>
+                <p>官方网站：<a href="https://www.bokumono.com/series/futago/" target="_blank">牧場物語 ふたごの村</a></p>
             </div>
         </div>
-        <div class="introduce">
-            <p>「牧场物语 双子村」重新登场。</p>
-            <p>在新的游戏开始时，可以选择角色类型等，变得更容易玩了。</p>
-            <p>在充满动物的「蓝铃村」和庄稼丰收的「此花村」，两个村庄之间来回行动。</p>
-            <p>居民们的活动也很丰富。通过通讯交换可以去朋友牧场玩，或者通过擦肩通信来交换物品。</p>
+        <div class="card_cassette">
+            <img class="cassette" src="soft_big_futago_plus.png">
+            <div class="card_text">
+                <h3>牧场物语 双子村＋</h3>
+                <p>发售日期：2017/12/14</p>
+                <p>对应机器：任天堂3DS</p>
+                <p>官方网站：<a href="https://www.bokumono.com/series/twin_plus/" target="_blank">牧場物語 ふたごの村＋</a></p>
+            </div>
         </div>
-        <div class="feedback">
-            <div class="qrcode">
-                <img src="./qrcode_for_weixin.jpg">
-            </div>
-            <div class="fb">
-                <p>如果您发现本站存在错误，请通过以下途径向我们反馈。</p>
-                <p class="fb"><img src="./ico/weibo.png"><span class="fb">微博：<a href="https://weibo.com/mineraltown/"
-                            target="_blank">@矿石镇</a></span></p>
-                <p class="fb"><img src="./ico/weixin.png"><span class="fb">微信公众号：矿石镇</span></p>
-                <p class="fb"><img src="./ico/mail.png"><span class="mail">邮箱：friends@mineraltown.net</span></p>
-            </div>
+    </div>
+    <div class="note">
+        <p>「牧场物语 双子村」重新登场。<br>
+            在新的游戏开始时，可以选择角色类型等，变得更容易玩了。<br>
+            在充满动物的「蓝铃村」和庄稼丰收的「此花村」，两个村庄之间来回行动。<br>
+            居民们的活动也很丰富。通过通讯交换可以去朋友牧场玩，或者通过擦肩通信来交换物品。</p>
+    </div>
+    <br>
+    <div class="contact_us">
+        <img src="/images/qrcode_for_weixin.jpg">
+        <div class="contact_text">
+            <p>如果您发现任何错误，请通过以下方式向我们反馈。</p>
+            <p class="flex_center"><img src="/icon/weibo-fill.svg"><span style="margin-left:1em;">微博：<a
+                        href="https://weibo.com/mineraltown" target="_blank">@矿石镇</a></span></p>
+            <p class="flex_center"><img src="/icon/wechat-fill.svg"><span style="margin-left:1em;">微信公众号：矿石镇</span>
+            </p>
+            <p class="flex_center"><img src="/icon/mail-fill.svg"><span
+                    style="margin-left:1em;">邮箱：friends@mineraltown.net</span></p>
         </div>
     </div>
 </body>

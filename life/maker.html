@@ -5,47 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
-    <title>加工机器</title>
-    <link rel="stylesheet" media="screen and (max-width:800px)" type="text/css" href="../css/szc_mobile.css" />
-    <link rel="stylesheet" media="screen and (min-width:801px)" type="text/css" href="../css/szc.css" />
+    <title>加工机</title>
+    <link rel="stylesheet" href="/css/iframe.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9202929133026434" crossorigin="anonymous"></script>
+    <style>
+        ul {
+            display: flex;
+            display: -webkit-flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        li {
+            width: 9em;
+            cursor: default;
+        }
+
+        .top {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+
+        @media only screen and (min-width: 801px) {
+            .top {
+                width: 8em;
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            .top {
+                width: 6em;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <a href="#" class="top"><img src="/ico/top.png"></a>
-    <h1 class="menu_h1">加工机器</h1>
-    <div class="menu">
+    <a href="#" class="top"><img src="/icon/top.png"></a>
+    <h1>加工机</h1>
+    <ul class="link">
         <a href="#fj">
-            <div class="list list_first">发酵加工机</div>
+            <li>发酵加工机</li>
         </a>
         <a href="#mx">
-            <div class="list">毛线加工机</div>
+            <li>毛线加工机</li>
         </a>
         <a href="#yl">
-            <div class="list">饮料加工机</div>
+            <li>饮料加工机</li>
         </a>
         <a href="#zz">
-            <div class="list">种子加工机</div>
+            <li>种子加工机</li>
         </a>
         <a href="#fm">
-            <div class="list">粉末加工机</div>
+            <li>粉末加工机</li>
         </a>
         <a href="#jc">
-            <div class="list">酱菜加工机</div>
+            <li>酱菜加工机</li>
         </a>
-    </div>
+    </ul>
     <p>可以同时加工12种物品，每种物品最多加工20个<br>加工机通过牧场的扩建获得</p>
-    <h3>蓝铃村</h3>
-    <p>放牧地扩建1次 → 宠物游乐园 → 加工小屋(发酵・毛线加工机) → 饮料加工机</p>
-    <h3>此花村</h3>
-    <p>田地扩建3次 → 水田＆水車小屋(种子・粉末加工机) → 酱菜加工机</p>
-    <div class="center">
-        <h3 id="fj">发酵加工机</h3>
-        <table>
+    <div class="note">
+        <p><span class="bold">蓝铃村</span>：放牧地扩建1次 → 宠物游乐园 → 加工小屋(发酵・毛线加工机) → 饮料加工机</p>
+        <p><span class="bold">此花村</span>：田地扩建3次 → 水田＆水車小屋(种子・粉末加工机) → 酱菜加工机</p>
+    </div>
+    <h2 id="fj">发酵加工机</h2>
+    <table>
+        <thead>
             <tr>
                 <th>加工品名</th>
                 <th>材料</th>
                 <th>加工时间</th>
             </tr>
+        </thead>
+        <tbody>
             <tr>
                 <td>奶酪</td>
                 <td>牛奶</td>
@@ -181,14 +215,18 @@
                 <td>大豆＋水稻</td>
                 <td>2h15m</td>
             </tr>
-        </table>
-        <h3 id="mx">毛线加工机</h3>
-        <table>
+        </tbody>
+    </table>
+    <h2 id="mx">毛线加工机</h2>
+    <table>
+        <thead>
             <tr>
                 <th>加工品名</th>
                 <th>材料</th>
                 <th>加工時間</th>
             </tr>
+        </thead>
+        <tbody>
             <tr>
                 <td>毛线球</td>
                 <td>羊毛</td>
@@ -214,14 +252,18 @@
                 <td>茶色羊驼毛</td>
                 <td>22.5h</td>
             </tr>
-        </table>
-        <h3 id="yl">饮料加工机</h3>
-        <table>
+        </tbody>
+    </table>
+    <h2 id="yl">饮料加工机</h2>
+    <table>
+        <thead>
             <tr>
                 <th>加工品名</th>
                 <th>材料</th>
                 <th>加工時間</th>
             </tr>
+        </thead>
+        <tbody>
             <tr>
                 <td>葡萄酒</td>
                 <td>葡萄</td>
@@ -367,14 +409,18 @@
                 <td>罐装巧克力</td>
                 <td>6.5h</td>
             </tr>
-        </table>
-        <h3 id="zz">种子加工机</h3>
-        <table>
+        </tbody>
+    </table>
+    <h2 id="zz">种子加工机</h2>
+    <table>
+        <thead>
             <tr>
                 <th>加工品名</th>
                 <th>材料</th>
                 <th>加工時間</th>
             </tr>
+        </thead>
+        <tbody>
             <tr>
                 <td>芜菁种子</td>
                 <td>芜菁</td>
@@ -600,14 +646,18 @@
                 <td>春茶叶＋夏茶叶＋秋茶叶</td>
                 <td>192h</td>
             </tr>
-        </table>
-        <h3 id="fm">粉末加工机</h3>
-        <table>
+        </tbody>
+    </table>
+    <h2 id="fm">粉末加工机</h2>
+    <table>
+        <thead>
             <tr>
                 <th>加工品名</th>
                 <th>材料</th>
                 <th>加工時間</th>
             </tr>
+        </thead>
+        <tbody>
             <tr>
                 <td>米</td>
                 <td>水稻</td>
@@ -643,14 +693,18 @@
                 <td>年糕</td>
                 <td>0.5h</td>
             </tr>
-        </table>
-        <h3 id="jc">酱菜加工机</h3>
-        <table>
+        </tbody>
+    </table>
+    <h2 id="jc">酱菜加工机</h2>
+    <table>
+        <thead>
             <tr>
                 <th>加工品名</th>
                 <th>材料</th>
                 <th>加工時間</th>
             </tr>
+        </thead>
+        <tbody>
             <tr>
                 <td>腌黄瓜</td>
                 <td>黄瓜＋油</td>
@@ -741,8 +795,9 @@
                 <td>梅子</td>
                 <td>5h</td>
             </tr>
-        </table>
-    </div>
+        </tbody>
+    </table>
+    <div style="height:5em;"></div>
 </body>
 
 </html>

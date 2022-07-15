@@ -1,0 +1,173 @@
+[{
+        "双子之村": [{
+            "name": "游戏介绍",
+            "href": "initial/introduction.html"
+        }, {
+            "name": "茶点计数器",
+            "href": "counter/index.html"
+        }],
+        "牧场生活": [{
+                "name": "农作",
+                "href": "life/plant.html"
+            },
+            {
+                "name": "动物",
+                "href": "life/animal.html"
+            },
+            {
+                "name": "宠物",
+                "href": "life/pet.html"
+            },
+            {
+                "name": "马车",
+                "href": "life/carriage.html"
+            },
+            {
+                "name": "道具",
+                "href": "life/prop.html"
+            },
+            {
+                "name": "扩建",
+                "href": "life/extension.html"
+            },
+            {
+                "name": "加工机",
+                "href": "life/maker.html"
+            }
+        ],
+        "村庄居民": [{
+                "name": "蓝铃村",
+                "href": "town/bluebell.html"
+            },
+            {
+                "name": "此花村",
+                "href": "town/konohana.html"
+            },
+            {
+                "name": "年度活动",
+                "href": "town/events.html"
+            },
+            {
+                "name": "居民事件",
+                "href": "town/activity.html"
+            },
+            {
+                "name": "居民介绍",
+                "href": "town/resident.html"
+            },
+            {
+                "name": "居民喜好速查",
+                "href": "town/quickquery.html"
+            },
+            {
+                "name": "隐藏人物登场",
+                "href": "town/hide.html"
+            }
+        ],
+        "地图采集": [{
+                "name": "地图",
+                "href": "map/map.html"
+            },
+            {
+                "name": "采集",
+                "href": "map/collect.html"
+            },
+            {
+                "name": "昆虫",
+                "href": "map/insect.html"
+            },
+            {
+                "name": "钓鱼",
+                "href": "map/fish.html"
+            },
+            {
+                "name": "熊事件",
+                "href": "map/bear.html"
+            },
+            {
+                "name": "野生动物",
+                "href": "map/wildanimal.html"
+            },
+            {
+                "name": "隧道&矿山",
+                "href": "map/tunnel.html"
+            }
+        ],
+        "烹饪料理": [{
+                "name": "沙拉",
+                "href": "cook/salad.html"
+            },
+            {
+                "name": "汤",
+                "href": "cook/soup.html"
+            },
+            {
+                "name": "冷盘",
+                "href": "cook/colddish.html"
+            },
+            {
+                "name": "主菜",
+                "href": "cook/staple.html"
+            },
+            {
+                "name": "甜点",
+                "href": "cook/dessert.html"
+            },
+            {
+                "name": "其他",
+                "href": "cook/other.html"
+            },
+            {
+                "name": "料理大会",
+                "href": "cook/festival.html"
+            }
+        ],
+        "其他": [{
+                "name": "炼金术",
+                "href": "other/alchemy.html"
+            },
+            {
+                "name": "耀珠",
+                "href": "other/dragonball.html"
+            },
+            {
+                "name": "服装",
+                "href": "other/clothing.html"
+            },
+            {
+                "name": "成就",
+                "href": "other/achievement.html"
+            },
+            {
+                "name": "称号",
+                "href": "other/designation.html"
+            },
+            {
+                "name": "翻译对照表",
+                "href": "other/translate.html"
+            }
+        ]
+    },
+    {
+        "牧场": {
+            "icon": "seedling-fill.svg",
+            "href": "pasture.html"
+        },
+        "居民": {
+            "icon": "user-2-line.svg",
+            "href": "resident.html"
+        },
+        "村庄": {
+            "icon": "home-3-line.svg",
+            "href": "town.html"
+        },
+        "料理": {
+            "icon": "restaurant.svg",
+            "href": "cook.html"
+        },
+        "其他": {
+            "icon": "more-fill.svg",
+            "href": "other.html"
+        }
+    }
+]

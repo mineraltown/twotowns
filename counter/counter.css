@@ -1,0 +1,332 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: #333333;
+    background-color: white;
+    font-family: "Noto Sans CJK SC", "Source Han Sans CN", "PingFangSC-Regular", "Microsoft YaHei", sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 700px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+.title {
+    width: 100%;
+    padding: 1.5em 0 1em 0;
+    background-color: #ddd;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #1b75bc;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-decoration: none;
+}
+
+.creat {
+    margin: 0.5em 0 0 0;
+    padding: 0;
+}
+
+.date {
+    width: 90%;
+    margin: 1em 0 1em 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.date_title {
+    position: absolute;
+    align-self: flex-start;
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+.date_right {
+    width: 8em;
+    margin-right: 0.5em;
+    text-align: right;
+}
+
+.em_2 {
+    font-size: 2em;
+}
+
+.animal_box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#animal_template {
+    display: none;
+}
+
+.animal {
+    margin: 5px 0 5px 0;
+    width: 90%;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.animal_info {
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    border-left: 3px solid gray;
+}
+
+div {
+    /* border: solid 1px red; */
+    text-align: center;
+}
+
+.name {
+    width: 5em;
+    height: 100%;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0.5em;
+    flex-grow: 1;
+    font-size: 1.3em;
+    text-align: left;
+}
+
+.type {
+    width: 2em;
+    padding: 0 0.5em 0 0.5em;
+    height: 100%;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cookies {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cookie {
+    height: 2em;
+    line-height: 2em;
+    padding: 0 0.5em 0 0.5em;
+    margin: 0 1px 0 1px;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.open_edit {
+    width: 3em;
+}
+
+input {
+    padding: 2px;
+    border: solid 1px #999;
+}
+
+button {
+    padding: 2px 0.5em 2px 0.5em;
+    border: solid 1px #999;
+}
+
+select {
+    border: solid 1px #999;
+}
+
+.animal_edit {
+    /* display: none; */
+    width: 75%;
+    margin-top: 1em;
+    padding: 1em 1.5em 1em 2em;
+    border: solid 1px #ddd;
+}
+
+.edit_line {
+    height: 2.5em;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.edit_line_end {
+    height: 2.5em;
+    margin-top: 2em;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.edit_warning {
+    display: none;
+    margin-left: 6.5em;
+    color: firebrick;
+}
+
+.edit_title {
+    font-weight: bold;
+    text-align: left;
+    width: 5em;
+}
+
+.edit_title_2 {
+    text-align: left;
+    padding-left: 2em;
+    width: 3.5em;
+}
+
+.input_name {
+    width: 7.2em;
+    padding-left: 0.5em;
+    height: 1.5em;
+}
+
+.input_type {
+    width: 8.1em;
+    padding-left: 0.5em;
+    height: 2em;
+}
+
+.input_num {
+    margin: 0 0.3em 0 0.3em;
+    width: 3.6em;
+    text-align: center;
+}
+
+.f_num {
+    padding: 1em;
+}
+
+.f_need {
+    margin: 0 0.3em 0 0.3em;
+    width: 3em;
+    text-align: center;
+}
+
+.placeholder {
+    width: 0.5em;
+}
+
+.edit_submit {
+    margin: 0.5em;
+    width: 4em;
+    line-height: 2em;
+    background-color: #ddd;
+}
+
+.all {
+    width: 90%;
+    margin-top: 1em;
+    padding-right: 3em;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.all_submit {
+    margin: 0.5em;
+    width: 6em;
+    line-height: 2em;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.red {
+    color: white;
+    background-color: firebrick;
+}
+
+
+.modification_date {
+    display: none;
+    width: 90%;
+    margin-top: 1em;
+    padding: 1em 0 1em 0;
+    border: solid 1px #ddd;
+}
+
+.modification_date_flex {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.modification_date_title {
+    width: 4em;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #555;
+}
+
+.modification_date_body {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.modification_title {
+    text-align: left;
+    width: 2em;
+}
+
+.add_animal_title {
+    text-align: justify;
+    width: 4em;
+}
+
+.birthday {
+    height: auto;
+}

@@ -6,13 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" media="screen and (max-width:800px)" type="text/css" href="./css/wiki_mobile.css" />
-    <link rel="stylesheet" media="screen and (min-width:801px)" type="text/css" href="./css/wiki.css" />
-    <title>牧场物语 双子村 WIKI - 矿石镇的攻略百科</title>
-    <meta name="description" content="牧场物语 双子村 WIKI - 矿石镇的攻略百科 | 又不是不能用的牧场物语系列游戏攻略">
+    <link rel="stylesheet" type="text/css" href="twotowns.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width:801px)" href="/css/wiki.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width:800px)" href="/css/wiki_m.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/icon/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/icon/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/icon/favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="矿石镇的攻略百科">
+    <meta name="application-name" content="矿石镇的攻略百科">
+    <meta name="msapplication-TileColor" content="#999999">
+    <meta name="msapplication-config" content="/icon/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <title>双子村的攻略百科</title>
+    <meta name="description" content="牧场物语 双子村 WIKI - 矿石镇的攻略百科 | 将荒芜的庄园变成繁盛的牧场，是我的梦想！">
     <meta name="keywords" content="牧场物语,双子村,牧場物語,ふたごの村,攻略,NDS,3DS">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RGS2Q2FLSG"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T9JX4C52TL"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -21,125 +33,119 @@
         }
         gtag('js', new Date());
 
-        gtag('config', 'G-RGS2Q2FLSG');
+        gtag('config', 'G-T9JX4C52TL');
     </script>
 </head>
 
 <body>
-    <div class="title">
-        <div class="logo"><img src="title.png" class="logo_img"></div>
-        <div class="title_text">
-            <h1>牧场物语 双子村 WIKI</h1>
-            <p class="slogan">彩虹上的马车所穿越的村庄</p>
-        </div>
-    </div>
-    <div class="main">
-        <div class="menu">
-            <div class="sub" id="synopsis">简介</div>
-            <div class="list" id="synopsis_list">
-                <a href="initial/introduction.html" class="list_link" target="home">游戏介绍</a>
+    <div id="wiki" v-cloak>
+        <div class="head">
+            <div class="logo">
+                <img src="title.png">
             </div>
-            <div class="sub" id="pasture">牧场</div>
-            <div class="list" id="pasture_list">
-                <a href="life/plant.html" class="list_link" target="home">农作</a>
-                <a href="life/animal.html" class="list_link" target="home">动物</a>
-                <a href="life/pet.html" class="list_link" target="home">宠物</a>
-                <a href="life/carriage.html" class="list_link" target="home">马车</a>
-                <a href="life/prop.html" class="list_link" target="home">道具</a>
-                <a href="life/extension.html" class="list_link" target="home">扩建</a>
-                <a href="life/maker.html" class="list_link" target="home">加工机器</a>
-            </div>
-            <div class="sub" id="village">村庄</div>
-            <div class="list" id="village_list">
-                <a href="town/bluebell.html" class="list_link" target="home">蓝铃村</a>
-                <a href="town/konohana.html" class="list_link" target="home">此花村</a>
-                <a href="town/events.html" class="list_link" target="home">年度活动</a>
-            </div>
-            <div class="sub" id="residents">居民</div>
-            <div class="list" id="residents_list">
-                <a href="resident/activity.html" class="list_link" target="home">居民事件</a>
-                <a href="resident/cm.html" class="list_link" target="home">居民介绍</a>
-                <a href="resident/quickquery.html" class="list_link" target="home">居民喜好速查</a>
-                <a href="resident/hide.html" class="list_link" target="home">隐藏人物登场</a>
-            </div>
-            <div class="sub" id="cooking">料理</div>
-            <div class="list" id="cooking_list">
-                <a href="food/salad.html" class="list_link" target="home">沙拉</a>
-                <a href="food/soup.html" class="list_link" target="home">汤</a>
-                <a href="food/colddish.html" class="list_link" target="home">冷盘</a>
-                <a href="food/staple.html" class="list_link" target="home">主菜</a>
-                <a href="food/dessert.html" class="list_link" target="home">甜点</a>
-                <a href="food/other.html" class="list_link" target="home">其他</a>
-                <a href="food/festival.html" class="list_link" target="home">料理大会</a>
-            </div>
-            <div class="sub" id="collection">采集</div>
-            <div class="list" id="collection_list">
-                <a href="collection/map.html" class="list_link" target="home">地图</a>
-                <a href="collection/collect.html" class="list_link" target="home">采集</a>
-                <a href="collection/insect.html" class="list_link" target="home">昆虫</a>
-                <a href="collection/fish.html" class="list_link" target="home">钓鱼</a>
-                <a href="collection/bear.html" class="list_link" target="home">熊事件</a>
-                <a href="collection/wildanimal.html" class="list_link" target="home">野生动物</a>
-                <a href="collection/tunnel.html" class="list_link" target="home">隧道&矿山</a>
-            </div>
-            <div class="sub" id="other">其他</div>
-            <div class="list" id="other_list">
-                <a href="other/alchemy.html" class="list_link" target="home">炼金术</a>
-                <a href="other/dragonball.html" class="list_link" target="home">耀珠</a>
-                <a href="other/clothing.html" class="list_link" target="home">服装</a>
-                <a href="other/achievement.html" class="list_link" target="home">成就</a>
-                <a href="other/designation.html" class="list_link" target="home">称号</a>
-                <a href="other/translate.html" class="list_link" target="home">翻译对照表</a>
-            </div>
-            <div class="copy">
-                <p class="copy"><a href="https://wiki.mineraltown.net/" class="copy">矿石镇的攻略百科</a> © 2021</p>
+            <div class="title">
+                <h1 class="name">双子村的攻略百科</h1>
+                <h2 class="slogan">彩虹上的马车所穿越的村庄</h2>
             </div>
         </div>
-        <div class="frame">
-            <iframe src="default.html" name="home" frameborder="0"></iframe>
+        <div class="main">
+            <div class="aside">
+                <div class="aside_flex">
+                    <div class="aside_sub">双子之村</div>
+                    <div class="aside_title">
+                        <a class="aside_link" href="initial/introduction.html" target="home">游戏介绍</a>
+                        <a class="aside_link" href="counter/index.html" target="home">茶点计数器</a>
+                    </div>
+                    <div class="aside_sub">牧场生活</div>
+                    <div class="aside_title">
+                        <a class="aside_link" href="life/plant.html" target="home">农作</a>
+                        <a class="aside_link" href="life/animal.html" target="home">动物</a>
+                        <a class="aside_link" href="life/pet.html" target="home">宠物</a>
+                        <a class="aside_link" href="life/carriage.html" target="home">马车</a>
+                        <a class="aside_link" href="life/prop.html" target="home">道具</a>
+                        <a class="aside_link" href="life/extension.html" target="home">扩建</a>
+                        <a class="aside_link" href="life/maker.html" target="home">加工机</a>
+                    </div>
+                    <div class="aside_sub">村庄居民</div>
+                    <div class="aside_title">
+                        <a class="aside_link" href="town/bluebell.html" target="home">蓝铃村</a>
+                        <a class="aside_link" href="town/konohana.html" target="home">此花村</a>
+                        <a class="aside_link" href="town/events.html" target="home">年度活动</a>
+                        <a class="aside_link" href="town/activity.html" target="home">居民事件</a>
+                        <a class="aside_link" href="town/resident.html" target="home">居民介绍</a>
+                        <a class="aside_link" href="town/quickquery.html" target="home">居民喜好速查</a>
+                        <a class="aside_link" href="town/hide.html" target="home">隐藏人物登场</a>
+                    </div>
+                    <div class="aside_sub">地图采集</div>
+                    <div class="aside_title">
+                        <a class="aside_link" href="map/map.html" target="home">地图</a>
+                        <a class="aside_link" href="map/collect.html" target="home">采集</a>
+                        <a class="aside_link" href="map/insect.html" target="home">昆虫</a>
+                        <a class="aside_link" href="map/fish.html" target="home">钓鱼</a>
+                        <a class="aside_link" href="map/bear.html" target="home">熊事件</a>
+                        <a class="aside_link" href="map/wildanimal.html" target="home">野生动物</a>
+                        <a class="aside_link" href="map/tunnel.html" target="home">隧道&矿山</a>
+                    </div>
+                    <div class="aside_sub">烹饪料理</div>
+                    <div class="aside_title">
+                        <a class="aside_link" href="cook/salad.html" target="home">沙拉</a>
+                        <a class="aside_link" href="cook/soup.html" target="home">汤</a>
+                        <a class="aside_link" href="cook/colddish.html" target="home">冷盘</a>
+                        <a class="aside_link" href="cook/staple.html" target="home">主菜</a>
+                        <a class="aside_link" href="cook/dessert.html" target="home">甜点</a>
+                        <a class="aside_link" href="cook/other.html" target="home">其他</a>
+                        <a class="aside_link" href="cook/festival.html" target="home">料理大会</a>
+                    </div>
+                    <div class="aside_sub"></div>
+                    <div class="aside_title">
+                        <a class="aside_link" href="other/alchemy.html" target="home">炼金术</a>
+                        <a class="aside_link" href="other/dragonball.html" target="home">耀珠</a>
+                        <a class="aside_link" href="other/clothing.html" target="home">服装</a>
+                        <a class="aside_link" href="other/achievement.html" target="home">成就</a>
+                        <a class="aside_link" href="other/designation.html" target="home">称号</a>
+                        <a class="aside_link" href="other/translate.html" target="home">翻译对照表</a>
+                    </div>
+                </div>
+                <div class="copy">
+                    <p class="copy"><a href="https://wiki.mineraltown.net/" class="copy">矿石镇的攻略百科</a> © 2022</p>
+                </div>
+            </div>
+            <div class="frame">
+                <iframe src="default.html" name="home" id="home" frameborder="0"></iframe>
+            </div>
         </div>
-    </div>
-    <div class="menu_mobile">
-        <a href="life.html" target="home" class="button" id="life">
-            <div class="menu_logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                        d="M12 23.728l-6.364-6.364a9 9 0 1 1 12.728 0L12 23.728zm4.95-7.778a7 7 0 1 0-9.9 0L12 20.9l4.95-4.95zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
-                        fill="#666" /></svg></div>
-            <div class="menu_name">牧场</div>
-        </a>
-        <a href="activity.html" target="home" class="button" id="activity">
-            <div class="menu_logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                        d="M4 22a8 8 0 1 1 16 0h-2a6 6 0 1 0-12 0H4zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6zm0-2c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z"
-                        fill="#666" /></svg></div>
-            <div class="menu_name">居民</div>
-        </a>
-        <a href="towns.html" target="home" class="button" id="towns">
-            <div class="menu_logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                        d="M19 21H5a1 1 0 0 1-1-1v-9H1l10.327-9.388a1 1 0 0 1 1.346 0L23 11h-3v9a1 1 0 0 1-1 1zM6 19h12V9.157l-6-5.454-6 5.454V19zm2-4h8v2H8v-2z"
-                        fill="#666" /></svg></div>
-            <div class="menu_name">村庄</div>
-        </a>
-        <a href="food.html" target="home" class="button" id="food">
-            <div class="menu_logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                        d="M14.268 12.146l-.854.854 7.071 7.071-1.414 1.414L12 14.415l-7.071 7.07-1.414-1.414 9.339-9.339c-.588-1.457.02-3.555 1.62-5.157 1.953-1.952 4.644-2.427 6.011-1.06s.892 4.058-1.06 6.01c-1.602 1.602-3.7 2.21-5.157 1.621zM4.222 3.808l6.717 6.717-2.828 2.829-3.89-3.89a4 4 0 0 1 0-5.656zM18.01 9.11c1.258-1.257 1.517-2.726 1.061-3.182-.456-.456-1.925-.197-3.182 1.06-1.257 1.258-1.516 2.727-1.06 3.183.455.455 1.924.196 3.181-1.061z"
-                        fill="#666" /></svg></div>
-            <div class="menu_name">料理</div>
-        </a>
-        <a href="other.html" target="home" class="button" id="other">
-            <div class="menu_logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                        d="M5 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm14 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-7 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
-                        fill="#666" /></svg></div>
-            <div class="menu_name">其他</div>
-        </a>
+        <div class="footer">
+            <a href="pasture.html" target="home" class="footer_menu">
+                <div class="menu_logo">
+                    <img src="/icon/seedling-fill.svg">
+                </div>
+                <div class="menu_name">牧场</div>
+            </a>
+            <a href="resident.html" target="home" class="footer_menu">
+                <div class="menu_logo">
+                    <img src="/icon/user-2-line.svg">
+                </div>
+                <div class="menu_name">居民</div>
+            </a>
+            <a href="town.html" target="home" class="footer_menu">
+                <div class="menu_logo">
+                    <img src="/icon/home-3-line.svg">
+                </div>
+                <div class="menu_name">村庄</div>
+            </a>
+            <a href="cook.html" target="home" class="footer_menu">
+                <div class="menu_logo">
+                    <img src="/icon/restaurant.svg">
+                </div>
+                <div class="menu_name">料理</div>
+            </a>
+            <a href="other.html" target="home" class="footer_menu">
+                <div class="menu_logo">
+                    <img src="/icon/more-fill.svg">
+                </div>
+                <div class="menu_name">其他</div>
+            </a>
+        </div>
     </div>
 </body>
 

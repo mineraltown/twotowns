@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="counter.css">
+    <script src="counter.js" charset="utf-8"></script>
+    <title>双子村茶点计数器</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T9JX4C52TL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-T9JX4C52TL');
+    </script>
+</head>
+<!--
+    版本 ver 1.0.0
+    作者 矿石镇的攻略百科
+    网站 wiki.mineraltown.net
+    E-Mail friends@mineraltown.net
+
+    本站使用 WTFPL 协议开源，你他妈的想干嘛就干嘛。
+
+    如需清空本站缓存，请在控制台输入：localStorage.clear()
+    如遇BUG请尝试清空本地缓存，或将bug截图及说明发送至本站联系邮箱。
+
+ -->
+
+<body>
+    <!-- 标题 -->
+    <div class="title">
+        <h1>双子村茶点计数器</h1>
+        <p class="creat" id="subtitle">“总是记不住喂了几个饼干，好烦啊！”</p>
+    </div>
+    <!-- 游戏时间 -->
+    <div class="date">
+        <div class="date_title">游戏时间</div>
+        <div class="date_right">第<span class="year" id="year" name="year">1</span>年</div>
+        <div class="date_right"><span class="em_2"><span class="month" id="month" name="month">春</span><span class="day"
+                    id="day" name="day">1</span>日</span></div>
+    </div>
+    <!-- 动物 -->
+    <div class="animal_box" id="animal_box">
+    </div>
+    <!-- 调整日期 -->
+    <div class="modification_date" id="modification_date">
+        <div class="modification_date_flex">
+            <div class="modification_date_title">调<br>整<br>日<br>期</div>
+            <div class="modification_date_body">
+                <div class="edit_line">
+                    <p class="modification_title">年</p>
+                    <button onclick="year('subtract','input')">-</button>
+                    <input onblur="year('','input')" type="number" min="1" class="input_num" id="input_year">
+                    <button onclick="year('add','input')">+</button>
+                </div>
+                <div class="edit_line">
+                    <p class="modification_title">月</p>
+                    <div class="cookie" id="input_month_spring" onclick="fseason('春','input')">春</div>
+                    <div class="cookie" id="input_month_summer" onclick="fseason('夏','input')">夏</div>
+                    <div class="cookie" id="input_month_autumn" onclick="fseason('秋','input')">秋</div>
+                    <div class="cookie" id="input_month_winter" onclick="fseason('冬','input')">冬</div>
+                </div>
+                <div class="edit_line">
+                    <p class="modification_title">日</p>
+                    <button onclick="day('subtract','input')">-</button>
+                    <input onblur="day('','input')" type="number" min="1" max="31" class="input_num" id="input_day">
+                    <button onclick="day('add','input')">+</button>
+                </div>
+            </div>
+            <div class="modification_date_body">
+                <div class="all_submit" onclick="initialization_modification_date()">初始化</div>
+                <div class="all_submit red" onclick="modification_date_save()">保存</div>
+            </div>
+        </div>
+    </div>
+    <!-- 添加动物 -->
+    <div class="modification_date" id="add_animal">
+        <div class="modification_date_flex">
+            <div class="modification_date_title">添<br>加<br>动<br>物</div>
+            <div class="modification_date_body">
+                <div class="edit_line">
+                    <p class="add_animal_title" style="margin-right: 2em;" id="add_animal_name_title">名字 *</p>
+                    <input onblur="animal_name_onblur(this)" id="add_animal_name" maxlength="6" type="text"
+                        class="input_name">
+                </div>
+                <div class="edit_line edit_warning" id="add_animal_name_warning">已经有小动物叫这个了！</div>
+                <div class="edit_line">
+                    <p class="add_animal_title" style="margin-right: 2em;">类型</p>
+                    <select class="input_type" id="add_animal_type">
+                        <option value="鸡" selected>鸡</option>
+                        <option value="黑鸡">黑鸡</option>
+                        <option value="牛">牛</option>
+                        <option value="茶牛">茶牛</option>
+                        <option value="羊">羊</option>
+                        <option value="黑羊">黑羊</option>
+                        <option value="白色羊驼">白色羊驼</option>
+                        <option value="茶色羊驼">茶色羊驼</option>
+                    </select>
+                </div>
+                <div class="edit_line birthday">
+                    <p class="add_animal_title">生日</p>
+                    <div>
+                        <div class="edit_line">
+                            <p class="modification_title">年</p>
+                            <button onclick="year('subtract','add_animal_birthday')">-</button>
+                            <input onblur="year('','add_animal_birthday')" type="number" min="1" class="input_num"
+                                id="add_animal_birthday_year">
+                            <button onclick="year('add','add_animal_birthday')">+</button>
+                        </div>
+                        <div class="edit_line">
+                            <p class="modification_title">月</p>
+                            <div class="cookie" id="add_animal_birthday_month_spring"
+                                onclick="fseason('春','add_animal_birthday')">春</div>
+                            <div class="cookie" id="add_animal_birthday_month_summer"
+                                onclick="fseason('夏','add_animal_birthday')">夏</div>
+                            <div class="cookie" id="add_animal_birthday_month_autumn"
+                                onclick="fseason('秋','add_animal_birthday')">秋</div>
+                            <div class="cookie" id="add_animal_birthday_month_winter"
+                                onclick="fseason('冬','add_animal_birthday')">冬</div>
+                        </div>
+                        <div class="edit_line">
+                            <p class="modification_title">日</p>
+                            <button onclick="day('subtract','add_animal_birthday')">-</button>
+                            <input onblur="day('','add_animal_birthday')" type="number" min="1" max="31"
+                                class="input_num" id="add_animal_birthday_day">
+                            <button onclick="day('add','add_animal_birthday')">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="all">
+            <div class="all_submit" onclick="add_animal_initialization()">初始化</div>
+            <div class="all_submit red" onclick="add_animal_save()">保存</div>
+        </div>
+    </div>
+    <!-- 全局提交 -->
+    <div class="all">
+        <div class="all_submit" onclick="modification_date()">调整日期</div>
+        <div class="all_submit" onclick="add_animal()">添加动物</div>
+        <div class="all_submit red" onclick="new_day()">新的一天</div>
+    </div>
+</body>
+<script>
+    // 本地存储检测
+    if (typeof (Storage) == "undefined") {
+        document.getElementById("subtitle").innerHTML = '“你的浏览器不支持这个功能哦~”'
+    } else {
+        window.onload = function () {
+            if (localStorage.animal != undefined && localStorage.szc_animal == undefined) {
+                localStorage.szc_year = localStorage.year
+                localStorage.removeItem('year')
+                localStorage.szc_month = localStorage.month
+                localStorage.removeItem('month')
+                localStorage.szc_day = localStorage.day
+                localStorage.removeItem('day')
+                localStorage.szc_animal = localStorage.animal
+                localStorage.removeItem('animal')
+            }
+            if (localStorage.szc_year == undefined) {
+                initialization_date()
+            }
+            if (localStorage.szc_animal == undefined) {
+                localStorage.szc_animal = JSON.stringify({})
+            }
+            sync_date()
+            refresh_animal()
+        }
+    }
+</script>
+
+</html>

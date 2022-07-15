@@ -6,57 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
     <title></title>
-    <link rel="stylesheet" media="screen and (max-width:800px)" type="text/css" href="../css/szc_mobile.css" />
-    <link rel="stylesheet" media="screen and (min-width:801px)" type="text/css" href="../css/szc.css" />
+    <link rel="stylesheet" href="/css/iframe.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9202929133026434" crossorigin="anonymous"></script>
+    <style>
+        .flex_resident {
+            display: flex;
+            display: -webkit-flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .flex_resident div {
+            margin: 0 20px 0 20px;
+        }
+
+        .top {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+
+        @media only screen and (min-width: 801px) {
+            .top {
+                width: 8em;
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            .top {
+                width: 6em;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <a href="#" class="top"><img src="/ico/top.png"></a>
-    <h1 class="menu_h1">此花村</h1>
-    <div class="menu">
-        <a href="#cgs">
-            <div class="list list_first">村公所</div>
-        </a>
-        <a href="#cwd">
-            <div class="list">宠物店</div>
-        </a>
-        <a href="#zzd">
-            <div class="list">种子店</div>
-        </a>
-        <a href="#zhd">
-            <div class="list">杂货店</div>
-        </a>
-        <a href="#ct">
-            <div class="list">餐厅</div>
-        </a>
-    </div>
+    <a href="#" class="top"><img src="/icon/top.png"></a>
+    <h1>此花村</h1>
     <p>盛开着樱花和菖蒲的和风村庄，偏向于种植业<br>
         所有商店下雨天不营业</p>
+    <ul class="link">
+        <li><a href="#cgs">村公所</a></li>
+        <li><a href="#cwd">宠物店</a></li>
+        <li><a href="#zzd">种子店</a></li>
+        <li><a href="#zhd">杂货店</a></li>
+        <li><a href="#ct">餐厅</a></li>
+    </ul>
+
     <h2 id="cgs">【村公所】此花村公所</h2>
     <ul>
         <li>营业时间：7:30~17:00</li>
         <li>休息日：星期四 等</li>
     </ul>
-    <p class="gray">如果书架上没有相应的工具，会提示“...我认为目前没有任何我特别感兴趣的书。”<br>
+    <p class="note">如果书架上没有相应的工具，会提示“...我认为目前没有任何我特别感兴趣的书。”<br>
         二楼的书架上有“美食家的天妇罗”</p>
-    <h3>搬家</h3>
-    <p>月末、23日~30日之间可以搬家<br>
-        女主人公或者花嫁怀孕的时候不可以搬家<br>
-        有怀孕的动物不能搬家<br>
-        费用3000G</p>
-    <h3>住宿</h3>
-    <p>可以使用柜台上的住宿笔记住宿，可以存档<br>
-        任何时候都可以使用</p>
+    <div class="flex_resident">
+        <div>
+            <h3>搬家</h3>
+            <p>月末、23日~30日之间可以搬家<br>
+                女主人公或者花嫁怀孕的时候不可以搬家<br>
+                有怀孕的动物不能搬家<br>
+                费用3000G</p>
+        </div>
+        <div>
+            <h3>住宿</h3>
+            <p>可以使用柜台上的住宿笔记住宿，可以存档<br>
+                任何时候都可以使用</p>
+        </div>
+    </div>
     <h2 id="cwd">【宠物店】青梅竹马</h2>
     <ul>
         <li>营业时间：10:00~17:00</li>
         <li>休息日：星期五 星期六 等</li>
     </ul>
-    <p class="gray">柜台附近的架子上有一本书“我的旅行马车”</p>
-    <h3>宠物</h3>
-    <p>小型犬、大型犬、猫、猫头鹰、马、纯种马、北海道马</p>
-    <h3>马车</h3>
-    <p>条纹马车、竹马车、舞狮、机械鸡</p>
+    <p class="note">柜台附近的架子上有一本书“我的旅行马车”</p>
+    <div class="flex_resident">
+        <div>
+            <h3>宠物</h3>
+            <p>小型犬、大型犬、猫、猫头鹰、马、纯种马、北海道马</p>
+        </div>
+        <div>
+            <h3>马车</h3>
+            <p>条纹马车、竹马车、舞狮、机械鸡</p>
+        </div>
+    </div>
     <h2 id="zzd">【种子店】古恩贝的种子屋</h2>
     <ul>
         <li>营业时间：10:00~17:00</li>
@@ -100,20 +134,14 @@
         <li>营业时间：10:00~22:00</li>
         <li>休息日：星期二 节日等</li>
     </ul>
-    <p class="gray">柜台后面的架子上的“索纳的简单生鱼片安排”<br>
+    <p class="note">柜台后面的架子上的“索纳的简单生鱼片安排”<br>
         后面的书架上有一本书“如何与野生动物交朋友”</p>
-    <h3>沙拉</h3>
-    <p>拌菜、腌萝卜、韩式黄瓜拌菜、香草沙拉、豆腐沙拉</p>
-    <h3>汤</h3>
-    <p>味噌汤、蛋花汤、豌豆汤、鱼翅汤、越南河粉</p>
-    <h3>冷盘</h3>
-    <p>酱烤茄子、烤茄子、烤地瓜、鸡蛋羹、生鱼片、炒青菜、烧卖、小笼包、春卷、冷豆腐、鸡蛋卷、生拌金枪鱼</p>
-    <h3>主菜</h3>
-    <p>鸡蛋盖饭、寿司、寿司饭、烤鱼、煮鱼、炒饭、天妇罗盖饭、油炸豆腐寿司、油炸豆腐面、荞麦面、天妇罗荞麦面、竹笋饭、牛奶锅、纳豆卷、韩国泡菜、关东煮、石锅拌饭</p>
-    <h3>甜点</h3>
-    <p>豆奶布丁、蛋挞、草莓大福、三色团子、赏月团子、粽子、栗子馒头、草饼、荞麦团子、安倍川年糕</p>
-    <h3>其他</h3>
-    <p>绿茶、抹茶、煎茶、乌龙茶、普洱茶、人参茶、香蕉汁、苹果汁、混合果汁</p>
+    <p><b>沙拉：</b>拌菜、腌萝卜、韩式黄瓜拌菜、香草沙拉、豆腐沙拉<br>
+        <b>汤：</b>味噌汤、蛋花汤、豌豆汤、鱼翅汤、越南河粉<br>
+        <b>冷盘：</b>酱烤茄子、烤茄子、烤地瓜、鸡蛋羹、生鱼片、炒青菜、烧卖、小笼包、春卷、冷豆腐、鸡蛋卷、生拌金枪鱼<br>
+        <b>主菜：</b>鸡蛋盖饭、寿司、寿司饭、烤鱼、煮鱼、炒饭、天妇罗盖饭、油炸豆腐寿司、油炸豆腐面、荞麦面、天妇罗荞麦面、竹笋饭、牛奶锅、纳豆卷、韩国泡菜、关东煮、石锅拌饭<br>
+        <b>甜点：</b>豆奶布丁、蛋挞、草莓大福、三色团子、赏月团子、粽子、栗子馒头、草饼、荞麦团子、安倍川年糕<br>
+        <b>其他：</b>绿茶、抹茶、煎茶、乌龙茶、普洱茶、人参茶、香蕉汁、苹果汁、混合果汁</p>
 </body>
 
 </html>
